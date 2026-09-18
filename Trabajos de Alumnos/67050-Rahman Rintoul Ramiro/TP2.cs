@@ -1,5 +1,7 @@
 ﻿using System;
-
+// Trabajo Práctico 2 - TUDPV
+// Alumno: Rahman Rintoul Ramiro
+// Legajo: 67050
 namespace TP2
 {
     class Program
