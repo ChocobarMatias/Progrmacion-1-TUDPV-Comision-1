@@ -34,7 +34,7 @@ for(i = 0; i<ArmasDurabilidad.Length; i++)
     Console.Clear();
 }
 
-//defino estas variables aqui y no arriba ya que solo se utilizanen el bloque de abajo//
+//defino estas variables aqui y no arriba ya que solo se utilizan en el bloque de abajo//
 
 int JugadorOpcionInput;
 bool JugadorInputValido = false;

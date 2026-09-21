@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ1-Resuelto\\Ejercicio1\\Ejercicio1.csproj": {}
+    "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ3-Resuelto\\EJ3-Resuelto\\EJ3-Resuelto.csproj": {}
   },
   "projects": {
-    "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ1-Resuelto\\Ejercicio1\\Ejercicio1.csproj": {
+    "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ3-Resuelto\\EJ3-Resuelto\\EJ3-Resuelto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ1-Resuelto\\Ejercicio1\\Ejercicio1.csproj",
-        "projectName": "Ejercicio1",
-        "projectPath": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ1-Resuelto\\Ejercicio1\\Ejercicio1.csproj",
+        "projectUniqueName": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ3-Resuelto\\EJ3-Resuelto\\EJ3-Resuelto.csproj",
+        "projectName": "EJ3-Resuelto",
+        "projectPath": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ3-Resuelto\\EJ3-Resuelto\\EJ3-Resuelto.csproj",
         "packagesPath": "C:\\Users\\Mati\\.nuget\\packages\\",
-        "outputPath": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ1-Resuelto\\Ejercicio1\\obj\\",
+        "outputPath": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\EJ3-Resuelto\\EJ3-Resuelto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mati\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net10.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0": {
-            "targetAlias": "net10.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -38,13 +38,13 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net10.0": {
-          "targetAlias": "net10.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -56,6 +56,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
         }
       }
