@@ -72,7 +72,101 @@
                         }
 
                         break;
-                    
+                    case 2:
+                        bool continuar = true;
+                        while (continuar)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("1. Cargar tiempos y tiempo objetivo.");
+                            Console.WriteLine("2. Salir.");
+
+                            int opcion2 = int.Parse(Console.ReadLine());
+
+                            switch (opcion2)
+                            {
+                                case 1:
+                                    float[] tiempos = new float[5];
+                                    float tiempoObjetivo;
+
+                                    for (int i = 0; i < tiempos.Length; i++)
+                                    {
+                                        Console.Write($"Tiempo {i + 1}: ");
+                                        tiempos[i] = float.Parse(Console.ReadLine());
+                                    }
+
+                                    bool evaluando = true;
+                                    while (evaluando)
+                                    {
+                                        Console.Clear();
+                                        Console.WriteLine("=== EVALUACIÓN DE TIEMPO OBJETIVO ===");
+                                        Console.Write("Ingrese el tiempo objetivo a superar (o ingresar -1 para salir): ");
+
+                                        tiempoObjetivo = float.Parse(Console.ReadLine());
+
+                                        if (tiempoObjetivo == -1)
+                                        {
+                                            evaluando = false;
+                                        }
+                                        else
+                                        {
+                                            int clasificados = 0;
+
+                                            for (int i = 0; i < tiempos.Length; i++)
+                                            {
+                                                if (tiempos[i] <= tiempoObjetivo)
+                                                {
+                                                    clasificados++;
+                                                }
+                                            }
+
+                                            if (clasificados > 0)
+                                            {
+                                                Console.WriteLine($"¡Éxito! Un total de {clasificados} corredor(es) superaron la prueba (tiempo <= {tiempoObjetivo}s).");
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine($"Ningún corredor logró bajar o igualar la marca de {tiempoObjetivo}s.");
+                                            }
+
+                                            Console.WriteLine("Presione cualquier tecla para evaluar otro tiempo...");
+                                            Console.ReadKey();
+                                        }
+                                    }
+                                    break;
+                                case 2:
+                                    continuar = false;
+                                    break;
+                                default:
+                                    Console.WriteLine("Opcion invalida.");
+                                    break;
+                            }
+                        }
+                        break;
+
+                    case 3:
+                        Console.Clear();
+                        break;
+                    case 4:
+                        Console.Clear();
+                        break;
+                    case 5:
+                        Console.Clear();
+                        break;
+                    case 6:
+                        Console.Clear();
+                        break;
+                    case 7:
+                        Console.Clear();
+                        break;
+                    case 8:
+                        Console.Clear();
+                        break;
+                    case 9:
+                        Console.Clear();
+                        break;
+                    case 10:
+                        Console.Clear();
+                        break;
                     case 11:
                         Console.WriteLine("Saliendo de la aplicacion......");
                         Console.ReadKey();
@@ -87,8 +181,6 @@
 
             }
             while (true);
-            
-
         }
     }
 }
