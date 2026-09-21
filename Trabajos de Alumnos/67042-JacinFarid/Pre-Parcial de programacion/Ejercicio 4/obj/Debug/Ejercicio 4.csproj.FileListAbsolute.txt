@@ -1,0 +1,7 @@
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 4\bin\Debug\Ejercicio 4.exe.config
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 4\bin\Debug\Ejercicio 4.exe
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 4\bin\Debug\Ejercicio 4.pdb
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 4\obj\Debug\Ejercicio 4.csproj.AssemblyReference.cache
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 4\obj\Debug\Ejercicio 4.csproj.CoreCompileInputs.cache
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 4\obj\Debug\Ejercicio 4.exe
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 4\obj\Debug\Ejercicio 4.pdb

@@ -1,0 +1,2 @@
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 1\obj\Debug\TP Pre-parcial Programacion.csproj.AssemblyReference.cache
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 1\obj\Debug\TP Pre-parcial Programacion.csproj.CoreCompileInputs.cache

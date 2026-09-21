@@ -1,0 +1,7 @@
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 10\bin\Debug\Ejercicio 10.exe.config
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 10\bin\Debug\Ejercicio 10.exe
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 10\bin\Debug\Ejercicio 10.pdb
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 10\obj\Debug\Ejercicio 10.csproj.AssemblyReference.cache
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 10\obj\Debug\Ejercicio 10.csproj.CoreCompileInputs.cache
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 10\obj\Debug\Ejercicio 10.exe
+D:\Trabajos de Visual\Ejercicio 1\Ejercicio 10\obj\Debug\Ejercicio 10.pdb
