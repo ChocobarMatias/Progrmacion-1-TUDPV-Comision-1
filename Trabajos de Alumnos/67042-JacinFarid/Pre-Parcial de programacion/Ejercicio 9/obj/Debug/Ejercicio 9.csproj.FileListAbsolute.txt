@@ -1,7 +1,0 @@
-D:\Trabajos de Visual\Ejercicio 1\Ejercicio 9\bin\Debug\Ejercicio 9.exe.config
-D:\Trabajos de Visual\Ejercicio 1\Ejercicio 9\bin\Debug\Ejercicio 9.exe
-D:\Trabajos de Visual\Ejercicio 1\Ejercicio 9\bin\Debug\Ejercicio 9.pdb
-D:\Trabajos de Visual\Ejercicio 1\Ejercicio 9\obj\Debug\Ejercicio 9.csproj.AssemblyReference.cache
-D:\Trabajos de Visual\Ejercicio 1\Ejercicio 9\obj\Debug\Ejercicio 9.csproj.CoreCompileInputs.cache
-D:\Trabajos de Visual\Ejercicio 1\Ejercicio 9\obj\Debug\Ejercicio 9.exe
-D:\Trabajos de Visual\Ejercicio 1\Ejercicio 9\obj\Debug\Ejercicio 9.pdb
