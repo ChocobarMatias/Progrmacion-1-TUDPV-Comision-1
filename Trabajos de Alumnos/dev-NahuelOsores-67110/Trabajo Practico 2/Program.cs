@@ -145,6 +145,87 @@
 
                     case 3:
                         Console.Clear();
+                        int[] slimes = { 30, 40, 50, 60 };
+                        bool hordaViva = true;
+                        bool retirada = false;
+
+                        while (hordaViva && !retirada)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("======= ¡COMBATE CONTRA LA HORDA DE SLIMES! =======");
+                            Console.WriteLine("Estado actual de la horda:");
+
+                            for (int i = 0; i < slimes.Length; i++)
+                            {
+                                if (slimes[i] > 0)
+                                {
+                                    Console.WriteLine($"Slime [{i + 1}]: {slimes[i]} HP.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"Slime [{i + 1}]: DERROTADO.");
+                                }
+                            }
+                            Console.WriteLine("====================================================");
+                            Console.Write("Elige a qué slime atacar (0 al 3) o presiona 4 para retirarte: ");
+                            int objetivo = int.Parse(Console.ReadLine());
+
+                            switch (objetivo)
+                            {
+                                case 0:
+                                case 1:
+                                case 2:
+                                case 3:
+                                    if (slimes[objetivo] <= 0)
+                                    {
+                                        Console.WriteLine($"¡El Slime [{objetivo}] ya está derrotado! No desperdicies tu energía.");
+                                    }
+                                    else
+                                    {
+                                        slimes[objetivo] -= 20;
+                                        Console.WriteLine($"¡Atacaste al Slime [{objetivo}]! Le restaste 20 HP.");
+
+                                        if (slimes[objetivo] <= 0)
+                                        {
+                                            slimes[objetivo] = 0;
+                                            Console.WriteLine($"¡El Slime [{objetivo}] ha sido eliminado!");
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    retirada = true;
+                                    Console.WriteLine("Te has retirado del combate.");
+                                    Console.ReadKey();
+                                    break;
+                                default:
+                                    Console.WriteLine("Objetivo invalido. Elige un numero del 0 al 3.");
+                                    break;
+                            }
+                            if (!retirada)
+                            {
+                                int slimesVivos = 0;
+
+                                for (int i = 0; i < slimes.Length; i++)
+                                {
+                                    if (slimes[i] > 0)
+                                    {
+                                        slimesVivos++;
+                                    }
+                                }
+
+                                if (slimesVivos == 0)
+                                {
+                                    retirada = true;
+                                    Console.WriteLine("¡Felicidades derrotaste a la horda de slimes!");
+                                    Console.ReadKey();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Presiona cualquier tecla para el siguiente turno.");
+                                    Console.ReadKey();
+                                }
+                            }
+                        }
                         break;
                     case 4:
                         Console.Clear();
