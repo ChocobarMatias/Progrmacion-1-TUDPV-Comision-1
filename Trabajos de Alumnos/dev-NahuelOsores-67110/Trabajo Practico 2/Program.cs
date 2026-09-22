@@ -347,6 +347,86 @@
                         break;
                     case 6:
                         Console.Clear();
+                        string[] gemas = { "Fuego", "Hielo", "Rayo", "Veneno"};
+                        int[] cargas = new int[4];
+                        bool continuar6 = true;
+                        bool cargaValida;
+
+                        Console.Clear();
+                        for (int i = 0; i < cargas.Length; i++)
+                        {
+                            cargaValida = false;
+
+                            while (!cargaValida)
+                            {
+                                Console.Write($"Carga de la gema de {gemas[i]} (de 0 a 100): ");
+                                int carga = int.Parse(Console.ReadLine());
+
+                                if (carga > 100 || carga < 0)
+                                {
+                                    cargaValida = false;
+                                    Console.WriteLine("Carga invalida.");
+                                    Console.ReadKey();
+                                }
+                                else
+                                {
+                                    cargaValida = true;
+                                    cargas[i] = carga;
+                                }
+                            }
+                        }
+
+                        while (continuar6)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("================ GEMAS ================");
+                            for (int i = 0; i < gemas.Length; i++)
+                            {
+                                Console.WriteLine($"Gema: {gemas[i]} Cargas: {cargas[i]}/100");
+                            }
+                            Console.WriteLine("=======================================");
+                            Console.WriteLine("1: Recargar todas las gemas (+5 cargas)");
+                            Console.WriteLine("2: Buscar si hay alguna gema agotada");
+                            Console.WriteLine("3: Salir");
+
+                            int opcion6 = int.Parse(Console.ReadLine());
+                            switch (opcion6)
+                            {
+                                case 1:
+                                    for (int i = 0; i < cargas.Length; i++)
+                                    {
+                                        if (cargas[i] > 95)
+                                        {
+                                            cargas[i] = 100;
+                                        }
+                                        else
+                                        {
+                                            cargas[i] += 5;
+                                        }                             
+                                    }
+                                    Console.WriteLine("Gemas cargadas presione cualquier tecla para continuar.");
+                                    Console.ReadKey();
+                                    break;
+
+                                case 2:
+                                    int gemasAgotadas = 0;
+                                    for (int i = 0; i < cargas.Length; i++)
+                                    {
+                                        if (cargas[i] <= 0)
+                                        {
+                                            gemasAgotadas++;
+                                        }
+                                    }
+                                    Console.WriteLine($"Gemas agotadas: {gemasAgotadas}.");
+                                    Console.ReadKey();
+                                    break;
+
+                                case 3:
+                                    continuar6 = false;
+                                    break;
+                            }
+                        }
+
                         break;
                     case 7:
                         Console.Clear();
