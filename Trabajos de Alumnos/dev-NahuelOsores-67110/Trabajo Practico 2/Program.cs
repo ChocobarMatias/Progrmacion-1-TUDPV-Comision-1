@@ -287,6 +287,63 @@
                     case 5:
                         Console.Clear();
                         int[] dañoFlechas = new int[6];
+
+                        for (int i = 0; i < dañoFlechas.Length; i++)
+                        {
+                            Console.Write($"Ingresar daño de la flecha [{i + 1}]: ");
+                            dañoFlechas[i] = int.Parse(Console.ReadLine());
+                        }
+
+                        bool continuarFiltrando = true;
+
+                        while (continuarFiltrando)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("=== FILTRADO DE IMPACTOS CRÍTICOS ===");
+                            Console.Write("Ingrese el daño de referencia (o un numero negativo para salir): ");
+
+                            int dañoReferencia = int.Parse(Console.ReadLine());
+
+                            if (dañoReferencia < 0)
+                            {
+                                continuarFiltrando = false;
+                                Console.WriteLine("Saliendo del registro de rafaga...");
+                                Console.ReadKey();
+                            }
+                            else
+                            {
+                                //Console.Clear();
+                                int acumuladorDaño = 0;
+                                int cantidadImpactos = 0;
+
+                                Console.WriteLine($"Impactos que superaron los {dañoReferencia} puntos de daño:");
+                                Console.WriteLine("--------------------------------------------------");
+
+                                for(int i = 0; i < dañoFlechas.Length; i++)
+                                {
+                                    if (dañoFlechas[i] > dañoReferencia)
+                                    {
+                                        Console.WriteLine($"Flecha [{i + 1}]: {dañoFlechas[i]} de daño.");
+                                        acumuladorDaño += dañoFlechas[i];
+                                        cantidadImpactos++;
+                                    }
+                                }
+
+                                if (cantidadImpactos > 0)
+                                {
+                                    Console.WriteLine("--------------------------------------------------");
+                                    Console.WriteLine($"Total de impactos filtrados: {cantidadImpactos}.");
+                                    Console.WriteLine($"Suma total del daño filtrado: {acumuladorDaño} pts.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"Ninguna flecha superó la referencia de {dañoReferencia} de daño.");
+                                }
+
+                                Console.WriteLine("Presione cualquier tecla para probar otra referencia...");
+                                Console.ReadKey();
+                            }
+                        }
                         break;
                     case 6:
                         Console.Clear();
