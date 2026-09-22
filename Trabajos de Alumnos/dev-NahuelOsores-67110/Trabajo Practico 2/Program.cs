@@ -489,6 +489,72 @@
                         break;
                     case 8:
                         Console.Clear();
+                        int[] dañoFases = new int[3];
+                        bool continuar8 = true;
+
+                        for (int i = 0; i < dañoFases.Length; i++)
+                        {
+                            Console.Write($"Daño recibido de la Fase {i + 1}: ");
+                            int daño = int.Parse(Console.ReadLine());
+
+                            if (daño < 0)
+                            {
+                                Console.WriteLine("Daño negativo ingrese un numero positivo o 0.");
+                                Console.ReadKey();
+                                i--;
+                            }
+                            else
+                            {
+                                dañoFases[i] = daño;
+                            }
+                        }
+
+                        while (continuar8)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("1. Calcular promedio de daño entre las 3 fases.");
+                            Console.WriteLine("2. Identificar la fase más destructiva.");
+                            Console.WriteLine("3. Salir.");
+
+                            int opcion8 = int.Parse(Console.ReadLine());
+
+                            switch (opcion8)
+                            {
+                                case 1:
+                                    Console.Clear();
+                                    int dañoAcumulado = 0;
+
+                                    for(int i = 0; i < dañoFases.Length; i++)
+                                    {
+                                        dañoAcumulado += dañoFases[i];
+                                    }
+                                    dañoAcumulado /= 3;
+                                    Console.WriteLine($"El promedio de daño entre fases es de: {dañoAcumulado}.");
+                                    Console.ReadKey();
+                                    break;
+                                case 2:
+                                    int dañoMasAlto = 0;
+                                    for (int i = 0; i < dañoFases.Length; i++)
+                                    {
+                                        if (dañoFases[i] > dañoMasAlto)
+                                        {
+                                            dañoMasAlto = dañoFases[i];
+                                        }
+                                    }
+                                    Console.WriteLine($"El daño mas destructivo es de: {dañoMasAlto}.");
+                                    Console.ReadKey();
+                                    break;
+                                case 3:
+                                    continuar8 = false;
+                                    break;
+                                default:
+                                    Console.WriteLine("Opcion invalida.");
+                                    Console.ReadKey();
+                                    break;
+                            }
+                        }
+
+                        
                         break;
                     case 9:
                         Console.Clear();
