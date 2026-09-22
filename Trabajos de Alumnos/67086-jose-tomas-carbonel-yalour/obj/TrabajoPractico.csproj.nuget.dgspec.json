@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\megat\\OneDrive\\Desktop\\PROYECTOS CODE\\C#\\Condicionales\\TrabajoPractico\\TrabajoPractico.csproj": {}
+    "C:\\Users\\megat\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\67086-jose-tomas-carbonel-yalour\\TrabajoPractico.csproj": {}
   },
   "projects": {
-    "C:\\Users\\megat\\OneDrive\\Desktop\\PROYECTOS CODE\\C#\\Condicionales\\TrabajoPractico\\TrabajoPractico.csproj": {
+    "C:\\Users\\megat\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\67086-jose-tomas-carbonel-yalour\\TrabajoPractico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\megat\\OneDrive\\Desktop\\PROYECTOS CODE\\C#\\Condicionales\\TrabajoPractico\\TrabajoPractico.csproj",
+        "projectUniqueName": "C:\\Users\\megat\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\67086-jose-tomas-carbonel-yalour\\TrabajoPractico.csproj",
         "projectName": "TrabajoPractico",
-        "projectPath": "C:\\Users\\megat\\OneDrive\\Desktop\\PROYECTOS CODE\\C#\\Condicionales\\TrabajoPractico\\TrabajoPractico.csproj",
+        "projectPath": "C:\\Users\\megat\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\67086-jose-tomas-carbonel-yalour\\TrabajoPractico.csproj",
         "packagesPath": "C:\\Users\\megat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\megat\\OneDrive\\Desktop\\PROYECTOS CODE\\C#\\Condicionales\\TrabajoPractico\\obj\\",
+        "outputPath": "C:\\Users\\megat\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\67086-jose-tomas-carbonel-yalour\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\megat\\AppData\\Roaming\\NuGet\\NuGet.Config",

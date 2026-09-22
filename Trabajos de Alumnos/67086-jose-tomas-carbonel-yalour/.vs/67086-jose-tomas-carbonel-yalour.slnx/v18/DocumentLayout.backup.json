@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\megat\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\67086-jose-tomas-carbonel-yalour\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25E1E977-0F49-2933-021F-D60F02274B2C}|TrabajoPractico.csproj|c:\\users\\megat\\documents\\github\\progrmacion-1-tudpv-comision-1\\trabajos de alumnos\\67086-jose-tomas-carbonel-yalour\\tpcompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25E1E977-0F49-2933-021F-D60F02274B2C}|TrabajoPractico.csproj|solutionrelative:tpcompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\megat\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\67086-jose-tomas-carbonel-yalour\\TPcompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TPcompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,14 +28,10 @@
               "RelativeDocumentMoniker": "TPcompleto.cs",
               "ToolTip": "C:\\Users\\megat\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\67086-jose-tomas-carbonel-yalour\\TPcompleto.cs",
               "RelativeToolTip": "TPcompleto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-22T19:01:46.198Z",
+              "WhenOpened": "2026-09-22T15:34:25.006Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
