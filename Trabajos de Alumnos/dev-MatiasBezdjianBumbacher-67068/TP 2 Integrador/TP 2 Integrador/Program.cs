@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
+using System.Diagnostics.SymbolStore;
 using System.Dynamic;
 using System.Linq;
 using System.Text;
@@ -337,157 +338,187 @@ namespace TP_2_Integrador
         }
         static void Ejercicio7()
         {
-            Console.WriteLine("no iniciada");
-        }
-        static void Ejercicio8()
-        {
             Console.Clear();
-            Console.WriteLine("-------------EJERCICIO 8--------------------");
-            int[] danoFase = new int[3];
-
-            for (int i = 0; i < danoFase.Length; i++)
+            Console.WriteLine("-------------EJERCICIO 7--------------------");
+            bool[] trampas = { false, true, false, false, true, false };
+            int posicion = 0;
+            bool sigueVivo = true;
+            Console.WriteLine("entraste a un pasillo con trampas");
+            Console.WriteLine("comienzas en la casilla 0");
+            while (posicion < 5 && sigueVivo)
             {
-                Console.WriteLine("ingrese el dano recibido en la fase " + (i + 1));
-                danoFase[i] = int.Parse(Console.ReadLine());
-                Console.WriteLine("El dano recibido en la fase " + (i + 1) + " es de " + danoFase[i]);
+                Console.WriteLine("estas en la casilla " + posicion);
+                Console.WriteLine("ingresa 1 si quieres vanazar una casilla y 2 si quieres avanzar 2");
+                int eleccion = int.Parse(Console.ReadLine());
+                posicion += eleccion;
+                if (posicion >= 5)
+                {
+                    Console.WriteLine("llegaste a la meta ¡ganasteee!");
+                }
+                if (trampas[posicion])
+                {
+                    Console.WriteLine("caiste en una trampa en la casilla " + posicion + " ¡PERDISTE!");
+                    sigueVivo = false;
+                }
+                else
+                {
+                    Console.WriteLine("Es una cailla segura. sigues vivo");
+                }
             }
-            Console.WriteLine("elige una de las opciones");
-            Console.WriteLine("1-Calcular promedio de daño entre las 3 fases");
-            Console.WriteLine("2-cual fue la fase más destructiva");
-            int opicon = int.Parse(Console.ReadLine());
-            switch (opicon)
-            {
-                case 1:
-                    int suma = danoFase[0] + danoFase[1] + danoFase[2];
-                    float promedio = suma / 3;
-                    Console.WriteLine("el promedio de dano entre las 3 fases es de " + promedio);
-                    break;
-                case 2:
-                    int mayorDano;
-                    if (danoFase[0] > danoFase[1])
-                    {
-                        mayorDano = 0;
-                    }
-                    else
-                    {
-                        mayorDano = 1;
-                    }
-                    if (danoFase[2] > danoFase[mayorDano])
-                    {
-                        mayorDano = 2;
-                    }
-                    Console.WriteLine("La fase con mayor deno fue la fase " + (mayorDano + 1) + " con " + danoFase[mayorDano] + " de dano");
-                    break;
-            }
-
         }
-        static void Ejercicio9()
-        {
-            Console.Clear();
-            Console.WriteLine("-------------EJERCICIO 9--------------------");
-            int[] muncion = { 30, 15, 8 };
-            while (muncion[0] > 0 || muncion[1] > 0 || muncion[2] > 0)
-            {
-                Console.WriteLine("elige que arma usar");
-                Console.WriteLine("1- rifle");
-                Console.WriteLine("2- pistola");
-                Console.WriteLine("3- escopeta");
-                Console.WriteLine("0- ver cargador de las armas");
 
-                int opcion = int.Parse(Console.ReadLine());
-                switch (opcion)
+            static void Ejercicio8()
+            {
+                Console.Clear();
+                Console.WriteLine("-------------EJERCICIO 8--------------------");
+                int[] danoFase = new int[3];
+
+                for (int i = 0; i < danoFase.Length; i++)
+                {
+                    Console.WriteLine("ingrese el dano recibido en la fase " + (i + 1));
+                    danoFase[i] = int.Parse(Console.ReadLine());
+                    Console.WriteLine("El dano recibido en la fase " + (i + 1) + " es de " + danoFase[i]);
+                }
+                Console.WriteLine("elige una de las opciones");
+                Console.WriteLine("1-Calcular promedio de daño entre las 3 fases");
+                Console.WriteLine("2-cual fue la fase más destructiva");
+                int opicon = int.Parse(Console.ReadLine());
+                switch (opicon)
                 {
                     case 1:
-                        if (muncion[0] > 0)
-                        {
-                            if (muncion[0] < 20)
-                            {
-                                muncion[0] = 0;
-                                Console.WriteLine("Disparaste lo que quedaba de cargador el arma se quedo con municion en 0");
-                            }
-                            else
-                            {
-                                muncion[0] = muncion[0] - 20;
-                                Console.WriteLine("disparaste 20 balas, municion restante de " + muncion[0] + " balas");
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("no puedes disparar, municion faltante");
-                        }
+                        int suma = danoFase[0] + danoFase[1] + danoFase[2];
+                        float promedio = suma / 3;
+                        Console.WriteLine("el promedio de dano entre las 3 fases es de " + promedio);
                         break;
                     case 2:
-                        if (muncion[1] > 0)
+                        int mayorDano;
+                        if (danoFase[0] > danoFase[1])
                         {
-                            if (muncion[1] < 10)
-                            {
-                                muncion[1] = 0;
-                                Console.WriteLine("Disparaste lo que quedaba de cargador el arma se quedo con municion en 0");
-                            }
-                            else
-                            {
-                                muncion[1] = muncion[1] - 10;
-                                Console.WriteLine("disparaste 10 balas, municion restante de " + muncion[1] + " balas");
-                            }
+                            mayorDano = 0;
                         }
                         else
                         {
-                            Console.WriteLine("no puedes disparar, municion faltante");
+                            mayorDano = 1;
                         }
-                        break;
-                    case 3:
-                        if (muncion[2] > 0)
+                        if (danoFase[2] > danoFase[mayorDano])
                         {
-                            if (muncion[2] < 5)
-                            {
-                                muncion[2] = 0;
-                                Console.WriteLine("Disparaste lo que quedaba de cargador el arma se quedo con municion en 0");
-                            }
-                            else
-                            {
-                                muncion[2] = muncion[2] - 5;
-                                Console.WriteLine("disparaste 5 balas, municion restante de " + muncion[2] + " balas");
-                            }
+                            mayorDano = 2;
                         }
-                        else
-                        {
-                            Console.WriteLine("no puedes disparar, municion faltante");
-                        }
-                        break;
-                    case 0:
-                        Console.WriteLine("las balas restantes del rifle: " + muncion[0] + " balas");
-                        Console.WriteLine("las balas restantes del pistola: " + muncion[1] + " balas");
-                        Console.WriteLine("las balas restantes del escopeta: " + muncion[2] + " balas");
+                        Console.WriteLine("La fase con mayor deno fue la fase " + (mayorDano + 1) + " con " + danoFase[mayorDano] + " de dano");
                         break;
                 }
-            }
-        }
-        static void Ejercicio10()
-        {
-            Console.Clear();
-            Console.WriteLine("-------------EJERCICIO 10--------------------");
-            int[] expMision = new int[5];
-            int total = 0;
-            for (int i = 0; i < expMision.Length; i++)
-            {
-                Console.WriteLine("Cuanta EXP acumulo el aventurero " + (i + 1) + "?");
-                int exp = int.Parse(Console.ReadLine());
-                expMision[i] = exp;
-                if (expMision[i] >= 100)
-                {
-                    expMision[i] = expMision[i] + (int)(expMision[i] * 0.20);
-                    Console.WriteLine("el aventurero " + (i + 1) + " recibio una bonificacion del 20%. Ahora tiene " + expMision[i] + " de exp");
-                }
-            }
-            Console.WriteLine("Tabla final de exp ");
-            for (int i = 0; i < expMision.Length; i++)
-            {
-                total = total + expMision[i];
-                Console.WriteLine("Mision " + (i + 1) + ": " + expMision[i] + " EXP");
-            }
 
-            Console.WriteLine("Experiencia total acumulada: " + total);
+            }
+        
+        
+            static void Ejercicio9()
+            {
+                Console.Clear();
+                Console.WriteLine("-------------EJERCICIO 9--------------------");
+                int[] muncion = { 30, 15, 8 };
+                while (muncion[0] > 0 || muncion[1] > 0 || muncion[2] > 0)
+                {
+                    Console.WriteLine("elige que arma usar");
+                    Console.WriteLine("1- rifle");
+                    Console.WriteLine("2- pistola");
+                    Console.WriteLine("3- escopeta");
+                    Console.WriteLine("0- ver cargador de las armas");
+
+                    int opcion = int.Parse(Console.ReadLine());
+                    switch (opcion)
+                    {
+                        case 1:
+                            if (muncion[0] > 0)
+                            {
+                                if (muncion[0] < 20)
+                                {
+                                    muncion[0] = 0;
+                                    Console.WriteLine("Disparaste lo que quedaba de cargador el arma se quedo con municion en 0");
+                                }
+                                else
+                                {
+                                    muncion[0] = muncion[0] - 20;
+                                    Console.WriteLine("disparaste 20 balas, municion restante de " + muncion[0] + " balas");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("no puedes disparar, municion faltante");
+                            }
+                            break;
+                        case 2:
+                            if (muncion[1] > 0)
+                            {
+                                if (muncion[1] < 10)
+                                {
+                                    muncion[1] = 0;
+                                    Console.WriteLine("Disparaste lo que quedaba de cargador el arma se quedo con municion en 0");
+                                }
+                                else
+                                {
+                                    muncion[1] = muncion[1] - 10;
+                                    Console.WriteLine("disparaste 10 balas, municion restante de " + muncion[1] + " balas");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("no puedes disparar, municion faltante");
+                            }
+                            break;
+                        case 3:
+                            if (muncion[2] > 0)
+                            {
+                                if (muncion[2] < 5)
+                                {
+                                    muncion[2] = 0;
+                                    Console.WriteLine("Disparaste lo que quedaba de cargador el arma se quedo con municion en 0");
+                                }
+                                else
+                                {
+                                    muncion[2] = muncion[2] - 5;
+                                    Console.WriteLine("disparaste 5 balas, municion restante de " + muncion[2] + " balas");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("no puedes disparar, municion faltante");
+                            }
+                            break;
+                        case 0:
+                            Console.WriteLine("las balas restantes del rifle: " + muncion[0] + " balas");
+                            Console.WriteLine("las balas restantes del pistola: " + muncion[1] + " balas");
+                            Console.WriteLine("las balas restantes del escopeta: " + muncion[2] + " balas");
+                            break;
+                    }
+                }
+            }
+            static void Ejercicio10()
+            {
+                Console.Clear();
+                Console.WriteLine("-------------EJERCICIO 10--------------------");
+                int[] expMision = new int[5];
+                int total = 0;
+                for (int i = 0; i < expMision.Length; i++)
+                {
+                    Console.WriteLine("Cuanta EXP acumulo el aventurero " + (i + 1) + "?");
+                    int exp = int.Parse(Console.ReadLine());
+                    expMision[i] = exp;
+                    if (expMision[i] >= 100)
+                    {
+                        expMision[i] = expMision[i] + (int)(expMision[i] * 0.20);
+                        Console.WriteLine("el aventurero " + (i + 1) + " recibio una bonificacion del 20%. Ahora tiene " + expMision[i] + " de exp");
+                    }
+                }
+                Console.WriteLine("Tabla final de exp ");
+                for (int i = 0; i < expMision.Length; i++)
+                {
+                    total = total + expMision[i];
+                    Console.WriteLine("Mision " + (i + 1) + ": " + expMision[i] + " EXP");
+                }
+
+                Console.WriteLine("Experiencia total acumulada: " + total);
+            }
         }
     }
-}
+
 
