@@ -30,12 +30,12 @@
                 {
                     case 1:
                         Console.Clear();
-                        string[] armas = { "Espada", "Hacha", "Arco", "Daga" };
+                        string[] armamento = { "Espada", "Hacha", "Arco", "Daga" };
                         int[] durabilidades = new int[4];
 
                         for (int i = 0; i < durabilidades.Length; i++)
                         {
-                            Console.Write($"Durabilidad de {armas[i]}: ");
+                            Console.Write($"Durabilidad de {armamento[i]}: ");
                             durabilidades[i] = int.Parse(Console.ReadLine());
                         }
 
@@ -51,7 +51,7 @@
                                 {
                                     if (durabilidades[i] <= 20)
                                     {
-                                        Console.WriteLine($"ALERTA: {armas[i]} DETERIORADA. (Durabilidad: {durabilidades[i]}).");
+                                        Console.WriteLine($"ALERTA: {armamento[i]} DETERIORADA. (Durabilidad: {durabilidades[i]}).");
                                     }
                                 }
                                 Console.ReadKey();
@@ -59,9 +59,9 @@
 
                             case 2:
                                 Console.WriteLine("========ARMAS========");
-                                for (int i = 0; i < armas.Length; i++)
+                                for (int i = 0; i < armamento.Length; i++)
                                 {
-                                    Console.WriteLine($"Arma: {armas[i]}    Durabilidad:{durabilidades[i]}");
+                                    Console.WriteLine($"Arma: {armamento[i]}    Durabilidad: {durabilidades[i]}");
                                 }
                                 Console.ReadKey();
                                 break;
@@ -319,7 +319,7 @@
                                 Console.WriteLine($"Impactos que superaron los {dañoReferencia} puntos de daño:");
                                 Console.WriteLine("--------------------------------------------------");
 
-                                for(int i = 0; i < dañoFlechas.Length; i++)
+                                for (int i = 0; i < dañoFlechas.Length; i++)
                                 {
                                     if (dañoFlechas[i] > dañoReferencia)
                                     {
@@ -347,7 +347,7 @@
                         break;
                     case 6:
                         Console.Clear();
-                        string[] gemas = { "Fuego", "Hielo", "Rayo", "Veneno"};
+                        string[] gemas = { "Fuego", "Hielo", "Rayo", "Veneno" };
                         int[] cargas = new int[4];
                         bool continuar6 = true;
                         bool cargaValida;
@@ -402,7 +402,7 @@
                                         else
                                         {
                                             cargas[i] += 5;
-                                        }                             
+                                        }
                                     }
                                     Console.WriteLine("Gemas cargadas presione cualquier tecla para continuar.");
                                     Console.ReadKey();
@@ -431,7 +431,7 @@
                     case 7:
                         Console.Clear();
 
-                        bool[] trampas = { false, true, false, false, true, false};
+                        bool[] trampas = { false, true, false, false, true, false };
                         int posicion = 0;
                         bool Vivo = true;
 
@@ -464,7 +464,7 @@
 
                             if (posicion >= 5)
                             {
-                                Console.WriteLine("¡Llegaste a la meta! ¡Felicidades!");    
+                                Console.WriteLine("¡Llegaste a la meta! ¡Felicidades!");
                                 break;
                             }
 
@@ -477,12 +477,12 @@
                             {
                                 Console.WriteLine($"Seguis vivo pisaste una balsoda segura {posicion}.");
                             }
-                            
+
                         }
                         if (Vivo)
                         {
                             Console.WriteLine("¡Felicidades! Has completado el recorrido.");
-                            
+
                         }
                         Console.WriteLine("Presione cualquier tecla para regresar al menú...");
                         Console.ReadKey();
@@ -524,7 +524,7 @@
                                     Console.Clear();
                                     int dañoAcumulado = 0;
 
-                                    for(int i = 0; i < dañoFases.Length; i++)
+                                    for (int i = 0; i < dañoFases.Length; i++)
                                     {
                                         dañoAcumulado += dañoFases[i];
                                     }
@@ -536,7 +536,7 @@
                                     int dañoMasAlto = 0;
                                     for (int i = 0; i < dañoFases.Length; i++)
                                     {
-                                        if (dañoFases[i] > dañoMasAlto)
+                                        if(dañoFases[i] > dañoMasAlto)
                                         {
                                             dañoMasAlto = dañoFases[i];
                                         }
@@ -554,10 +554,64 @@
                             }
                         }
 
-                        
+
                         break;
                     case 9:
                         Console.Clear();
+                        string[] armas = { "Rifle", "Pistola", "Escopeta" };
+                        int[] municion = { 10, 3, 5 };
+                        bool continuarDisparando = true;
+
+                        while (continuarDisparando)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("======= SISTEMA DE MUNICIÓN Y DISPARO =======");
+                            Console.WriteLine();
+                            Console.WriteLine($"1. {armas[0]}: {municion[0]} balas");
+                            Console.WriteLine($"2. {armas[1]}: {municion[1]} balas");
+                            Console.WriteLine($"3. {armas[2]}: {municion[2]} cartuchos");
+                            Console.WriteLine();
+                            Console.WriteLine("=============================================");
+                            Console.WriteLine("1. Disparar Rifle.");
+                            Console.WriteLine("2. Disparar Pistola.");
+                            Console.WriteLine("3. Disparar Escopeta.");
+                            Console.WriteLine("0. Salir.");
+                            Console.WriteLine("=============================================");
+
+                            Console.Write("Selecciona el arma para disparar (1-3) o 0 para salir: ");
+                            int opcion9 = int.Parse(Console.ReadLine());
+
+                            switch (opcion9)
+                            {
+                                case 1:
+                                case 2:
+                                case 3:
+                                    int indiceArma = opcion9 - 1;
+
+                                    if (municion[indiceArma] > 0)
+                                    {
+                                        municion[indiceArma]--;
+                                        Console.WriteLine($"¡PUM! Has disparado el arma: {armas[indiceArma]}.");
+                                        Console.WriteLine($"Te quedan {municion[indiceArma]} balas en el cargador.");
+                                        Console.ReadKey();
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine($"¡CLICK! El arma: {armas[indiceArma]} está VACÍA (O). ¡Necesitas recargar!");
+                                        Console.ReadKey();
+                                    }
+                                    break;
+                                case 0:
+                                    continuarDisparando = false;
+                                    Console.WriteLine("Guardando armamento... Volviendo al menú.");
+                                    Console.ReadKey();
+                                    break;
+                                default:
+                                    Console.WriteLine("Opción inválida. Selecciona un arma del 1 al 3, o 0 para salir.");
+                                    break;
+                            }
+                        }
+
                         break;
                     case 10:
                         Console.Clear();
