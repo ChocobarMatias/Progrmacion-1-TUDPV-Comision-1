@@ -17,7 +17,7 @@ class Ejercicio1
         Console.WriteLine("--- MENÚ DE ARSENAL ---");
         Console.WriteLine("1: Inspeccionar armas críticas");
         Console.WriteLine("2: Ver arsenal completo");
-        Console.Write("Seleccione una opción: ");
+        Console.WriteLine("Seleccione una opción: ");
         int opcion = int.Parse(Console.ReadLine());
 
         switch (opcion)
@@ -59,14 +59,14 @@ class Ejercicio2
         // Carga de tiempos
         for (int i = 0; i < tiempos.Length; i++)
         {
-            Console.Write($"Ingrese el tiempo del corredor {i + 1} (en segundos): ");
+            Console.WriteLine($"Ingrese el tiempo del corredor {i + 1} (en segundos): ");
             tiempos[i] = float.Parse(Console.ReadLine());
         }
 
         string continuar = "s";
         while (continuar.ToLower() == "s")
         {
-            Console.Write("Ingrese el tiempo objetivo a superar: ");
+            Console.WriteLine("Ingrese el tiempo objetivo a superar: ");
             float tiempoObjetivo = float.Parse(Console.ReadLine());
 
             int clasificados = 0;
@@ -80,7 +80,7 @@ class Ejercicio2
 
             Console.WriteLine($"Un total de {clasificados} corredor(es) superaron la prueba logrando un tiempo <= {tiempoObjetivo}s.");
 
-            Console.Write("¿Desea probar con otro tiempo objetivo? (s/n): ");
+            Console.WriteLine("¿Desea probar con otro tiempo objetivo? (s/n): ");
             continuar = Console.ReadLine();
         }
     }
@@ -102,7 +102,7 @@ class Ejercicio3
                 Console.WriteLine($"Slime [{i}]: {(slimes[i] > 0 ? slimes[i] + " HP" : "DERROTADO")}");
             }
 
-            Console.Write("Elija a cuál slime atacar (0 al 3): ");
+            Console.WriteLine("Elija a cuál slime atacar (0 al 3): ");
             int objetivo = int.Parse(Console.ReadLine());
 
             switch (objetivo)
@@ -141,13 +141,13 @@ class Ejercicio4
     {
         int[] costos = { 10, 25, 50, 80, 120 };
 
-        Console.Write("Ingrese la cantidad de gemas del usuario: ");
+        Console.WriteLine("Ingrese la cantidad de gemas del usuario: ");
         int gemas = int.Parse(Console.ReadLine());
 
         Console.WriteLine("--- TIENDA DE CARTAS ---");
         Console.WriteLine("1: Mostrar cartas que puede pagar");
         Console.WriteLine("2: Identificar la carta más cara del catálogo");
-        Console.Write("Seleccione una opción: ");
+        Console.WriteLine("Seleccione una opción: ");
         int opcion = int.Parse(Console.ReadLine());
 
         switch (opcion)
@@ -199,14 +199,14 @@ class Ejercicio5
         // Carga del daño de 6 flechas
         for (int i = 0; i < flechas.Length; i++)
         {
-            Console.Write($"Ingrese el daño de la flecha {i + 1}: ");
+            Console.WriteLine($"Ingrese el daño de la flecha {i + 1}: ");
             flechas[i] = int.Parse(Console.ReadLine());
         }
 
         string continuar = "s";
         while (continuar.ToLower() == "s")
         {
-            Console.Write("Ingrese un daño de referencia para filtrar: ");
+            Console.WriteLine("Ingrese un daño de referencia para filtrar: ");
             int danoReferencia = int.Parse(Console.ReadLine());
 
             int acumulado = 0;
@@ -222,7 +222,7 @@ class Ejercicio5
 
             Console.WriteLine($"Daño total acumulado de impactos filtrados: {acumulado}");
 
-            Console.Write("¿Desea ingresar otro daño de referencia? (s/n): ");
+            Console.WriteLine("¿Desea ingresar otro daño de referencia? (s/n): ");
             continuar = Console.ReadLine();
         }
     }
@@ -240,14 +240,14 @@ class Ejercicio6
         // Carga del vector paralelo
         for (int i = 0; i < gemas.Length; i++)
         {
-            Console.Write($"Ingrese las cargas para la gema de {gemas[i]}: ");
+            Console.WriteLine($"Ingrese las cargas para la gema de {gemas[i]}: ");
             cargas[i] = int.Parse(Console.ReadLine());
         }
 
         Console.WriteLine("--- MENÚ MÁGICO ---");
         Console.WriteLine("1: Recargar todas (+5 cargas)");
         Console.WriteLine("2: Buscar si hay alguna gema agotada");
-        Console.Write("Seleccione una opción: ");
+        Console.WriteLine("Seleccione una opción: ");
         int opcion = int.Parse(Console.ReadLine());
 
         switch (opcion)
@@ -325,14 +325,14 @@ class Ejercicio8
 
         for (int i = 0; i < danoFases.Length; i++)
         {
-            Console.Write($"Ingrese el daño recibido en la Fase {i + 1}: ");
+            Console.WriteLine($"Ingrese el daño recibido en la Fase {i + 1}: ");
             danoFases[i] = int.Parse(Console.ReadLine());
         }
 
         Console.WriteLine("--- MENÚ DE ESTADÍSTICAS DEL BOSS ---");
         Console.WriteLine("1: Calcular promedio de daño entre las 3 fases");
         Console.WriteLine("2: Identificar la fase más destructiva");
-        Console.Write("Seleccione una opción: ");
+        Console.WriteLine("Seleccione una opción: ");
         int opcion = int.Parse(Console.ReadLine());
 
         switch (opcion)
@@ -383,7 +383,7 @@ class Ejercicio9
             Console.WriteLine($"2: Pistola (Balas: {municion[1]})");
             Console.WriteLine($"3: Escopeta (Balas: {municion[2]})");
             Console.WriteLine("0: Salir / Detener disparos");
-            Console.Write("Elija un opción: ");
+            Console.WriteLine("Elija un opción: ");
             opcion = int.Parse(Console.ReadLine());
 
             switch (opcion)
@@ -426,7 +426,7 @@ class Ejercicio10
         // Carga de EXP por Misión
         for (int i = 0; i < expMisiones.Length; i++)
         {
-            Console.Write($"Ingrese los puntos de EXP obtenidos en la Misión {i + 1}: ");
+            Console.WriteLine($"Ingrese los puntos de EXP obtenidos en la Misión {i + 1}: ");
             expMisiones[i] = double.Parse(Console.ReadLine());
         }
 
