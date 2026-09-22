@@ -159,11 +159,11 @@
                             {
                                 if (slimes[i] > 0)
                                 {
-                                    Console.WriteLine($"Slime [{i + 1}]: {slimes[i]} HP.");
+                                    Console.WriteLine($"Slime [{i}]: {slimes[i]} HP.");
                                 }
                                 else
                                 {
-                                    Console.WriteLine($"Slime [{i + 1}]: DERROTADO.");
+                                    Console.WriteLine($"Slime [{i}]: DERROTADO.");
                                 }
                             }
                             Console.WriteLine("====================================================");
@@ -215,7 +215,7 @@
 
                                 if (slimesVivos == 0)
                                 {
-                                    retirada = true;
+                                    hordaViva = false;
                                     Console.WriteLine("¡Felicidades derrotaste a la horda de slimes!");
                                     Console.ReadKey();
                                 }
@@ -229,9 +229,64 @@
                         break;
                     case 4:
                         Console.Clear();
+                        int[] cartasCostos = { 10, 25, 50, 80, 120 };
+                        string[] cartasNombres = { "Rayo Cortante", "Espejo Rojo", "Bola de Fuego", "Juicio Solemne", "Agujero Negro" };
+
+                        Console.Write("Introduce tus Gemas disponibles: ");
+                        int gemasUsuario = int.Parse(Console.ReadLine());
+                        bool continuar4 = true;
+
+                        while (continuar4)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("1. Mostrar cartas que puede pagar");
+                            Console.WriteLine("2. Identificar la carta mas cara del catalogo");
+                            Console.WriteLine("3. Salir");
+
+                            int opcion3 = int.Parse(Console.ReadLine());
+
+                            switch (opcion3)
+                            {
+                                case 1:
+                                    Console.Clear();
+                                    Console.WriteLine("==========Cartas Disponibles==========");
+
+                                    for (int i = 0; i < cartasCostos.Length; i++)
+                                    {
+                                        if (cartasCostos[i] <= gemasUsuario)
+                                        {
+                                            Console.WriteLine($"{cartasNombres[i]}: {cartasCostos[i]} G.");
+                                        }
+                                    }
+                                    Console.ReadKey();
+                                    break;
+                                case 2:
+                                    Console.Clear();
+                                    int costoMasAlto = 0;
+                                    string nombreCartaAlta = "";
+                                    for (int i = 0; i < cartasCostos.Length; i++)
+                                    {
+                                        if (cartasCostos[i] > costoMasAlto)
+                                        {
+                                            costoMasAlto = cartasCostos[i];
+                                            nombreCartaAlta = cartasNombres[i];
+                                        }
+                                    }
+                                    Console.WriteLine($"La carta mas alta es: {nombreCartaAlta} {costoMasAlto} G.");
+                                    Console.ReadKey();
+                                    break;
+                                case 3:
+                                    continuar4 = false;
+                                    break;
+                                default:
+                                    Console.WriteLine("Opcion invalida.");
+                                    break;
+                            }
+                        }
                         break;
                     case 5:
                         Console.Clear();
+                        int[] dañoFlechas = new int[6];
                         break;
                     case 6:
                         Console.Clear();
