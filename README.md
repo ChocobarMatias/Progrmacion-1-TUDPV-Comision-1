@@ -70,4 +70,4 @@ Siga detalladamente cada uno de los pasos descritos a continuación para la corr
    > `git merge dev-NombreApellido-Legajo`
 3. En la interfaz web de su fork, cuando la cátedra incorpore nuevo material, utilice la opción **Sync fork > Update branch** para mantenerse alineado con el repositorio principal.
 
-**Fecha Limite de entrega : Jueves 25/09/2026 a las 23:50 hs se cerrara los PR**
+**Fecha Limite de entrega : Jueves 24/09/2026 a las 23:50 hs se cerrara los PR**
