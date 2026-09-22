@@ -430,6 +430,62 @@
                         break;
                     case 7:
                         Console.Clear();
+
+                        bool[] trampas = { false, true, false, false, true, false};
+                        int posicion = 0;
+                        bool Vivo = true;
+
+                        Console.WriteLine("=== ¡PASILLO DE LA MAZMORRA! ===");
+                        Console.WriteLine("Comienzas en la baldosa 0. La meta es la baldosa 5.");
+                        Console.WriteLine("¡Cuidado con las trampas ocultas!");
+
+                        //Console.ReadKey();
+
+                        while (Vivo && posicion < 5)
+                        {
+                            Console.WriteLine($"Te encuentras en la baldosa: {posicion}");
+                            Console.Write("Elige tu movimiento (1 o 2 para avanzar, 0 o negativo para retroceder 1): ");
+                            int paso = int.Parse(Console.ReadLine());
+
+                            if (paso <= 0)
+                            {
+                                posicion -= 1;
+                            }
+                            else
+                            {
+                                posicion += paso;
+                            }
+                            if (posicion < 0)
+                            {
+                                posicion = 0;
+                                Console.WriteLine("Te chocaste con la pared del inicio. Sigues en la baldosa 0.");
+                                continue;
+                            }
+
+                            if (posicion >= 5)
+                            {
+                                Console.WriteLine("¡Llegaste a la meta! ¡Felicidades!");    
+                                break;
+                            }
+
+                            if (trampas[posicion])
+                            {
+                                Console.WriteLine($"Perdiste en la baldosa: {posicion} FIN DE LA PARTIDA.");
+                                Vivo = false;
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Seguis vivo pisaste una balsoda segura {posicion}.");
+                            }
+                            
+                        }
+                        if (Vivo)
+                        {
+                            Console.WriteLine("¡Felicidades! Has completado el recorrido.");
+                            
+                        }
+                        Console.WriteLine("Presione cualquier tecla para regresar al menú...");
+                        Console.ReadKey();
                         break;
                     case 8:
                         Console.Clear();
