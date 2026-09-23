@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EJ4-Resuelto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a84fa137f66a9743be2dc7edf1276b98aa38c0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a570826cb3c846e82f7e486d9622afe1e1c86ee5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EJ4-Resuelto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EJ4-Resuelto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
