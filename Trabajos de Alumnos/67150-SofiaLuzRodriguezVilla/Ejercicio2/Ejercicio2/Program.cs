@@ -1,4 +1,7 @@
-﻿float[] tiempos = new float[5];
+﻿/*Ejercicio 2: Marcador Top 5 de Speedrun
+Combina: Array + for + while + if/else*/
+
+float[] tiempos = new float[5];
 float[] tiempoObjetivo = new float[1];
 
 for (int i = 0; i < tiempos.Length; i++)
