@@ -38,16 +38,17 @@
                             Console.Write($"Durabilidad de {armamento[i]}: ");
                             durabilidades[i] = int.Parse(Console.ReadLine());
                         }
-
-                        Console.Clear();
-                        Console.WriteLine("1. Inspeccionar armas criticas.");
-                        Console.WriteLine("2. Ver arsenal completo.");
-                        Console.WriteLine("0. Salir.");
-                        int opcion1 = int.Parse(Console.ReadLine());
+                     
                         bool continuar1 = true;
 
                         while (continuar1)
                         {
+                            Console.Clear();
+                            Console.WriteLine("1. Inspeccionar armas criticas.");
+                            Console.WriteLine("2. Ver arsenal completo.");
+                            Console.WriteLine("0. Salir.");
+                            int opcion1 = int.Parse(Console.ReadLine());
+
                             switch (opcion1)
                             {
                                 case 1:
@@ -448,8 +449,6 @@
                         Console.WriteLine("Comienzas en la baldosa 0. La meta es la baldosa 5.");
                         Console.WriteLine("¡Cuidado con las trampas ocultas!");
 
-                        //Console.ReadKey();
-
                         while (Vivo && posicion < 5)
                         {
                             Console.WriteLine($"Te encuentras en la baldosa: {posicion}");
@@ -459,6 +458,10 @@
                             if (paso <= 0)
                             {
                                 posicion -= 1;
+                            }
+                            else if (paso > 2)
+                            {
+                                Console.WriteLine("Solo puedes moverte 2 pasos a la vez");
                             }
                             else
                             {
@@ -632,7 +635,7 @@
                             int EXPacumulada = 0;
                             for (int i = 0; i < misionesEXP.Length; i++)
                             {
-                                Console.WriteLine("Ingrese el numero de EXP obtenida de la mision: ");
+                                Console.Write($"Ingrese el numero de EXP obtenida de la {misiones[i]}: ");
                                 int mision = int.Parse(Console.ReadLine());
                                 if (mision <= 0)
                                 {
