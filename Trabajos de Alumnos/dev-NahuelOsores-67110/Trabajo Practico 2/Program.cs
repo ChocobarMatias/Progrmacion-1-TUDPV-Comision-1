@@ -623,7 +623,47 @@
 
                         break;
                     case 10:
-                        Console.Clear();
+                        int[] misionesEXP = new int[5];
+                        string[] misiones = { "Mision 1", "Mision 2", "Mision 3", "Mision 4", "Mision 5" };
+
+                        while (true)
+                        {
+                            Console.Clear();
+                            int EXPacumulada = 0;
+                            for (int i = 0; i < misionesEXP.Length; i++)
+                            {
+                                Console.WriteLine("Ingrese el numero de EXP obtenida de la mision: ");
+                                int mision = int.Parse(Console.ReadLine());
+                                if (mision <= 0)
+                                {
+                                    i--;
+                                    Console.WriteLine("Ingrese un valor mayor a 0.");
+                                }
+                                else if (mision > 100) misionesEXP[i] = (int)(mision * 1.20);
+
+                                else misionesEXP[i] = mision;
+                            }
+                            Console.WriteLine();
+                            Console.WriteLine("==========================================");
+                            Console.WriteLine("           RESUMEN DE MISIONES            ");
+                            Console.WriteLine("==========================================");
+                            for (int i = 0; i < misionesEXP.Length; i++)
+                            {
+                                Console.WriteLine($"{misiones[i]}  ||  {misionesEXP[i]} EXP.");
+                                EXPacumulada += misionesEXP[i];
+                            }
+                            Console.WriteLine("==========================================");
+                            Console.WriteLine();
+                            Console.WriteLine($"Total de experiencia conseguida en todas las misiones: {EXPacumulada} EXP.");
+                            Console.WriteLine();
+                            Console.WriteLine("==========================================");
+                            Console.Write("Presione cualquier tecla o ingrese 0 para salir. ");
+                            string tecla = Console.ReadLine();
+                            if (tecla == "0")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     case 0:
                         Console.WriteLine("Saliendo de la aplicacion......");
