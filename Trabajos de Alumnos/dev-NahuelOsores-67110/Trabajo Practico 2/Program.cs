@@ -19,7 +19,7 @@
                 Console.WriteLine("8. Estadisticas de fases del Boss.");
                 Console.WriteLine("9. Sistema de municion y Disparo por cargador.");
                 Console.WriteLine("10. Asignador y Verificador de bonificacion de EXP.");
-                Console.WriteLine("11. Salir");
+                Console.WriteLine("0. Salir");
                 Console.WriteLine();
                 Console.WriteLine("==============================");
                 Console.WriteLine();
@@ -42,33 +42,42 @@
                         Console.Clear();
                         Console.WriteLine("1. Inspeccionar armas criticas.");
                         Console.WriteLine("2. Ver arsenal completo.");
+                        Console.WriteLine("0. Salir.");
                         int opcion1 = int.Parse(Console.ReadLine());
+                        bool continuar1 = true;
 
-                        switch (opcion1)
+                        while (continuar1)
                         {
-                            case 1:
-                                for (int i = 0; i < durabilidades.Length; i++)
-                                {
-                                    if (durabilidades[i] <= 20)
+                            switch (opcion1)
+                            {
+                                case 1:
+                                    for (int i = 0; i < durabilidades.Length; i++)
                                     {
-                                        Console.WriteLine($"ALERTA: {armamento[i]} DETERIORADA. (Durabilidad: {durabilidades[i]}).");
+                                        if (durabilidades[i] <= 20)
+                                        {
+                                            Console.WriteLine($"ALERTA: {armamento[i]} DETERIORADA. (Durabilidad: {durabilidades[i]}).");
+                                        }
                                     }
-                                }
-                                Console.ReadKey();
-                                break;
+                                    Console.ReadKey();
+                                    break;
 
-                            case 2:
-                                Console.WriteLine("========ARMAS========");
-                                for (int i = 0; i < armamento.Length; i++)
-                                {
-                                    Console.WriteLine($"Arma: {armamento[i]}    Durabilidad: {durabilidades[i]}");
-                                }
-                                Console.ReadKey();
-                                break;
+                                case 2:
+                                    Console.WriteLine("========ARMAS========");
+                                    for (int i = 0; i < armamento.Length; i++)
+                                    {
+                                        Console.WriteLine($"Arma: {armamento[i]}    Durabilidad: {durabilidades[i]}");
+                                    }
+                                    Console.ReadKey();
+                                    break;
 
-                            default:
-                                Console.WriteLine("Opcion invalida.");
-                                break;
+                                case 0:
+                                    continuar1 = false;
+                                    break;
+
+                                default:
+                                    Console.WriteLine("Opcion invalida.");
+                                    break;
+                            }
                         }
 
                         break;
@@ -616,7 +625,7 @@
                     case 10:
                         Console.Clear();
                         break;
-                    case 11:
+                    case 0:
                         Console.WriteLine("Saliendo de la aplicacion......");
                         Console.ReadKey();
                         Environment.Exit(0);
