@@ -1,0 +1,16 @@
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoPractico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoPractico.AssemblyInfoInputs.cache
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoPractico.AssemblyInfo.cs
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoPractico.csproj.CoreCompileInputs.cache
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoPractico.sourcelink.json
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\bin\Debug\net10.0\TrabajoPractico.exe
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\bin\Debug\net10.0\TrabajoPractico.deps.json
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\bin\Debug\net10.0\TrabajoPractico.runtimeconfig.json
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\bin\Debug\net10.0\TrabajoPractico.dll
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\bin\Debug\net10.0\TrabajoPractico.pdb
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoPractico.dll
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\refint\TrabajoPractico.dll
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoPractico.pdb
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoPractico.genruntimeconfig.cache
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\ref\TrabajoPractico.dll
+C:\Users\megat\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67086-jose-tomas-carbonel-yalour\obj\Debug\net10.0\TrabajoP.76932F34.Up2Date
