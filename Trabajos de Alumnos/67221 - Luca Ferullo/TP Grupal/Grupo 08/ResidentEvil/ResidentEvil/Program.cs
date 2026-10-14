@@ -18,6 +18,9 @@ namespace ResidentEvil
         private string nombre;
         public  string  Nombre()
         {
+            Console.WriteLine(new string('=', 30));
+            Console.WriteLine("---- RESIDENT EVIL ----");
+            Console.WriteLine(new string('=', 30));
             Console.WriteLine("Ingresa el nombre del personaje:");
             nombre = Console.ReadLine();
             return nombre;
@@ -25,44 +28,75 @@ namespace ResidentEvil
     }
         public class HierbaVerde : ConsumibleSurvival
         {
-            public int vida = 100;
-            public bool estadoAlterado = true;
+            public int vida { get; set; } = 100;
+            public bool estadoAlterado { get; set; } = true;
 
-            public virtual void Consumir(int vida, bool estadoAlterado)
+            public virtual int Consumir()
             {
                 Console.WriteLine("Consiguió hierba verde.");
                 vida += 40;
                 estadoAlterado = false;
+            return vida;
             }
         }
 
         public class SprayPrimerosAuxilios : ConsumibleSurvival
         {
-            public int sprays = 1;
+            public int sprays { get; set; } = 1;
+        public int vida { get; set; } = 100;
         
             
             public int RegSpray(int sprays, int vida)
             {
-            return 0;
+            if (sprays > 0)
+            {
+                Console.WriteLine("Usó el spray de primeros auxilios.");
+                vida = 100;
+                sprays--;
+            }
+
+            else
+            {
+                Console.WriteLine("No queda sprays.");
+            }
+
+            return vida;
             }
         }
 
     partial class Superviviente : HierbaVerde
     {
 
-        public override void Consumir(int vida, bool estadoAlterado)
+        public override int Consumir()
         {
             Console.WriteLine("Vida: " + vida);
 
-            if (estadoAlterado == true)
+            if (!estadoAlterado)
             {
                 Console.WriteLine("No se encuentra afectado.");
+                
             }
 
             else
             {
                 Console.WriteLine("Se encuentra afectado.");
+                Console.WriteLine("Usando hierba verde.");
+
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.WriteLine(".");
+                    
+                }
+
+                vida += 40;
+                estadoAlterado = false;
+
+                Console.WriteLine("Vida en total: " + vida);
             }
+
+            return vida;
+
+            
         }
     }
 
@@ -70,9 +104,18 @@ namespace ResidentEvil
     {
         static void Main(string[] args)
         {
-            ConsumibleSurvival P = new ConsumibleSurvival();
+            Superviviente s = new Superviviente();
 
-            string nomPersonaje = P.Nombre();
+            string nomPersonaje = s.Nombre();
+
+            Console.WriteLine("Personaje seleccionado: " + nomPersonaje);
+
+            Console.WriteLine("Consumir hierba verde.");
+            s.Consumir();
+
+            Console.WriteLine("Selecciona alguna tecla para finalizar con el programa.");
+
+            Console.ReadKey();
         }
     }
 }
