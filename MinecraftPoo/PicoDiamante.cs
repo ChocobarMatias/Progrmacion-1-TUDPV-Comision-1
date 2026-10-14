@@ -29,9 +29,9 @@ namespace MinecraftPoo
             }
 
             // Mostramos el bloque que se esta picando.
-            if (b.Tipo == "Obsidiana")
+            if (b.Tipo.ToLower() == "obsidiana")
             {
-                Console.WriteLine("El pico de diamante esta picando obsidiana.");
+                Console.WriteLine("El pico de diamante esta picando OBSIDIANA.");
             }
             else
             {

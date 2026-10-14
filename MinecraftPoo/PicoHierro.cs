@@ -32,6 +32,8 @@ namespace MinecraftPoo
             );
 
             Thread.Sleep(500); // Espera de 0,5 segundos.
+            // Se llama al metodo de Romper de bloque para saber que se rompio el bloque.
+            b.Romper();
 
             Console.WriteLine(
                 "Bloque extraido rapidamente."

@@ -62,6 +62,8 @@ namespace MinecraftPoo
 
             // Cada golpe consume un punto de durabilidad.
             Durabilidad--;
+            // Se llama al metodo de Romper de bloque para saber que se rompio el bloque.
+            b.Romper();
 
             // Comprobamos si la herramienta se rompió.
             if (Durabilidad == 0)
