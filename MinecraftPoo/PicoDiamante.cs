@@ -40,6 +40,8 @@ namespace MinecraftPoo
 
             // Simulamos el tiempo de extraccion.
             Thread.Sleep(1000);
+            // Se llama al metodo de Romper de bloque para saber que se rompio el bloque.
+            b.Romper();
 
             // Cada tres golpes, pierde un punto de durabilidad.
             golpes++;

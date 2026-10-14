@@ -50,8 +50,8 @@ namespace MinecraftPoo
                 Console.WriteLine("El pico de hierro se rompio.");
             }
 
+        }
 
-     
-        }   
     }
+
 }

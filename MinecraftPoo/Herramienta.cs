@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MinecraftPoo
 {
-    internal class Herramienta
+    //Clase abstracta para instanciar herramientas especificas
+    abstract class Herramienta
     {
         // Campo protegido: las clases hijas también podrán acceder
         // al material de la herramienta.
