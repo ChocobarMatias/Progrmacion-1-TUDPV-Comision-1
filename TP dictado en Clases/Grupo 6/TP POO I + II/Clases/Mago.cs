@@ -30,15 +30,16 @@ namespace TP_POO_I___II.Clases
             if (this.mana >= 10)
             {
                 this.mana -= 10;
-                objetivo.RecibirDanio(30);
                 Console.WriteLine($"{this.nombre} (Mago) lanza un hechizo a {objetivo.GetNombre()}," +
                     $" gasta 10 de maná y causa 30 de daño.");
+                objetivo.RecibirDanio(30);
+                
             }
             else
             {
+                objetivo.RecibirDanio(5);
                 Console.WriteLine($"{this.nombre} (Mago) no tiene suficiente maná. " +
                     $"Hace un golpe débil a {objetivo.GetNombre()} causando 5 de daño.");
-                objetivo.RecibirDanio(5);
             }
         }
     }
