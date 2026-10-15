@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MARCELO\\Desktop\\visual studio codigo\\Super Mario Bros (Nintendo) grupo11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49551D72-3CCC-4C93-BCC2-AFA440A2D8EB}|Super Mario Bros (Nintendo) grupo11.csproj|c:\\users\\marcelo\\desktop\\visual studio codigo\\super mario bros (nintendo) grupo11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49551D72-3CCC-4C93-BCC2-AFA440A2D8EB}|Super Mario Bros (Nintendo) grupo11.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MARCELO\\Desktop\\visual studio codigo\\Super Mario Bros (Nintendo) grupo11\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\MARCELO\\Desktop\\visual studio codigo\\Super Mario Bros (Nintendo) grupo11\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T22:07:58.769Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
