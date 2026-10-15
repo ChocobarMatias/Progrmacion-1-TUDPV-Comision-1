@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MARCELO\\Desktop\\visual studio codigo\\Super Mario Bros (Nintendo) grupo11\\Super Mario Bros (Nintendo) grupo11.csproj",
+      "projectUniqueName": "C:\\Users\\MARCELO\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 11 - Tema 1\\Super Mario Bros (Nintendo) grupo11\\Super Mario Bros (Nintendo) grupo11.csproj",
       "projectName": "Super Mario Bros (Nintendo) grupo11",
-      "projectPath": "C:\\Users\\MARCELO\\Desktop\\visual studio codigo\\Super Mario Bros (Nintendo) grupo11\\Super Mario Bros (Nintendo) grupo11.csproj",
+      "projectPath": "C:\\Users\\MARCELO\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 11 - Tema 1\\Super Mario Bros (Nintendo) grupo11\\Super Mario Bros (Nintendo) grupo11.csproj",
       "packagesPath": "C:\\Users\\MARCELO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MARCELO\\Desktop\\visual studio codigo\\Super Mario Bros (Nintendo) grupo11\\obj\\",
+      "outputPath": "C:\\Users\\MARCELO\\Documents\\GitHub\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 11 - Tema 1\\Super Mario Bros (Nintendo) grupo11\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MARCELO\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Super Mario Bros (Nintendo) grupo11")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa94bb47fe2fe6b65932d007f9ded9cf3772fc21")]
 [assembly: System.Reflection.AssemblyProductAttribute("Super Mario Bros (Nintendo) grupo11")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Super Mario Bros (Nintendo) grupo11")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
