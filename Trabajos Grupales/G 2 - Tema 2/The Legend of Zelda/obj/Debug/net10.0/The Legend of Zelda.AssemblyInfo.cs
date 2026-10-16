@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("The Legend of Zelda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40292ebc75b0e4d0e113d303eae0f43798328711")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+849ccea19ae96263c879afcd80159b9033610b61")]
 [assembly: System.Reflection.AssemblyProductAttribute("The Legend of Zelda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("The Legend of Zelda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

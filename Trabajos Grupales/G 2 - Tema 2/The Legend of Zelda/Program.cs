@@ -2,6 +2,8 @@
 
 namespace TheLegendOfZelda
 {
+
+    //###GRAMAJO MATIAS###
     public abstract class ItemZelda
     {
         private string nombre;
@@ -40,6 +42,34 @@ namespace TheLegendOfZelda
             this.durabilidad = durabilidad;
         }
 
-        
+        //Verificacion si la durabilidad del objeto permite su uso y, en caso de que si, disminuir esta misma
+        protected bool IniciarUso()
+        {
+            if (this.durabilidad <= 0)
+            {
+                Console.WriteLine("El objeto esta por romperse");
+                return false;
+            }
+            this.durabilidad--;
+            return true;
+        }
+
+        public virtual void Usar(Link link)
+        {
+            if (link == null)
+            {
+                throw new ArgumentNullException(nameof(link));
+
+            }
+
+            if (!this.IniciarUso())
+            {
+                return;
+            }
+
+            Console.WriteLine("Usaste: {this.Nombre}.");
+        }
     }
+
+    
 }
