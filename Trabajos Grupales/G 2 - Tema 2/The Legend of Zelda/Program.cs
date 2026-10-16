@@ -173,4 +173,49 @@ namespace TheLegendOfZelda
             Console.WriteLine(link.Nombre + " Dispara una flecha con el Arco de Fuerza, causando daño a su objetivo. Flechas restantes: " + this.FlechasRestantes);
         }
     }
+
+
+
+    public class Program
+    {
+        public static void Main()
+        {
+            //Creacion del personake
+            Link link = new Link("Link", 10);
+
+            //Creacion de armas
+            EspadaMaestra espada = new EspadaMaestra("Espada Maestra", 100, 30);
+
+            ArcoFuerza arco = new ArcoFuerza("Arco de Fuerza", 50, 3);
+
+            ItemZelda[] equipo = {espada, arco};
+
+            Console.WriteLine("===INVENTARIO===");
+
+            for(int i = 0; i< equipo.Length; i++)
+            {
+                link.Equipar(equipo[i], i);
+
+                Console.WriteLine("Accionando el espacio {i}");
+                link.AccionarItem(i);
+            }
+
+            Console.WriteLine("===LINK ES DAÑADO===");
+
+            link.RecibirDanio(2);
+            
+            Console.WriteLine("USAR ARMAS");
+
+            //Al no tener la vida al maximo link ya no ataca con rayos
+            link.AccionarItem(0);
+            //Se gasta una flecha
+            link.AccionarItem(1);
+
+             Console.WriteLine("=== ESTADO FINAL ===");
+        Console.WriteLine($"Salud de Link: {link.Corazones}/{link.MaxCorazones}");
+        Console.WriteLine($"Durabilidad de la espada: {espada.Durabilidad}");
+        Console.WriteLine($"Durabilidad del arco: {arco.Durabilidad}");
+        Console.WriteLine($"Flechas restantes: {arco.FlechasRestantes}");
+        }
+    }
 }
