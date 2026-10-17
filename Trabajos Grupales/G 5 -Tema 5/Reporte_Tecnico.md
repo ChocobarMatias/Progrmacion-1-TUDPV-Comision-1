@@ -1,29 +1,28 @@
 # Reporte Técnico de Cátedra - Fase 1
 
-**Juego Asignado:** Doom Clásico
-**Número de Grupo:** Grupo [XX]
+**Juego Asignado:** Doom
+**Número de Grupo:** Grupo 05
 
 ---
 
 ## 1. Integrantes del Equipo
 
-* [Apellido y Nombre 1] - Legajo [XXXXX] (Rol: Personajes / Rama: dev-[Nombre1Apellido1-Legajo])
-* [Apellido y Nombre 2] - Legajo [XXXXX] (Rol: Armas y objetos / Rama: dev-[Nombre2Apellido2-Legajo])
-* [Apellido y Nombre 3] - Legajo [XXXXX] (Rol: Juego y mapa / Rama: dev-[Nombre3Apellido3-Legajo])
+* Monteros Matias - Legajo 140911 (Rol: Personajes y Juego / Rama: dev-MatiasMonteros-140911)
+* Lezcano Luz - Legajo 67119 (Rol: Armas / Rama: dev-LuzLezcano-67119)
 
 ---
 
 ## 2. Diagnóstico y Arquitectura Inicial
 
-Para el juego Doom Clásico decidimos hacer una versión simple por consola, jugada por turnos. El jugador se mueve por un mapa hecho con caracteres, pelea contra monstruos, junta objetos y tiene que matar a todos los enemigos y llegar a la salida para ganar.
+Para el juego Doom decidimos hacer una versión simple por consola, jugada por turnos. El jugador se mueve por un mapa hecho con caracteres, pelea contra monstruos, junta objetos y tiene que matar a todos los enemigos y llegar a la salida para ganar.
 
-Dividimos el programa en tres archivos, uno por integrante:
+Dividimos el programa en tres archivos:
 
 | Archivo | Contenido | Integrante |
 |---|---|---|
-| `Personajes.cs` | `Personaje`, `Jugador`, `Enemigo`, `Zombie`, `Imp`, `Demonio` | 1 |
-| `Armas.cs` | `Arma`, `Motosierra`, `Pistola`, `Escopeta`, `Objeto`, `Botiquin`, `CajaMunicion`, `ObjetoArmadura` | 2 |
-| `Juego.cs` | `Juego` (mapa y reglas) y `Program` (`Main`) | 3 |
+| `Personajes.cs` | `Personaje`, `Jugador`, `Enemigo`, `Zombie`, `Imp`, `Demonio` | Monteros Matias |
+| `Armas.cs` | `Arma`, `Motosierra`, `Pistola`, `Escopeta`, `Objeto`, `Botiquin`, `CajaMunicion`, `ObjetoArmadura` | Lezcano Luz |
+| `Juego.cs` | `Juego` (mapa y reglas) y `Program` (`Main`) | Monteros Matias |
 
 Usamos **herencia** para no repetir código: todos los personajes comparten nombre, vida y posición; todas las armas comparten daño y alcance; todos los objetos comparten posición y símbolo. Usamos **polimorfismo** para que cada tipo haga algo distinto con el mismo método (por ejemplo, cada enemigo ataca de forma diferente).
 
