@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mael\\Desktop\\Programcion\\tp individual\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\LucianoRossini-67065\\ejercicio4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA935BF-54A2-4480-B7AE-D548F556E3E9}|ejercicio4\\ejercicio4.csproj|c:\\users\\mael\\desktop\\programcion\\tp individual\\progrmacion-1-tudpv-comision-1\\trabajos de alumnos\\lucianorossini-67065\\ejercicio4\\ejercicio4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CA935BF-54A2-4480-B7AE-D548F556E3E9}|ejercicio4\\ejercicio4.csproj|solutionrelative:ejercicio4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mael\\Desktop\\Programcion\\tp individual\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\LucianoRossini-67065\\ejercicio4\\ejercicio4\\Program.cs",
+              "RelativeDocumentMoniker": "ejercicio4\\Program.cs",
+              "ToolTip": "C:\\Users\\mael\\Desktop\\Programcion\\tp individual\\Progrmacion-1-TUDPV-Comision-1\\Trabajos de Alumnos\\LucianoRossini-67065\\ejercicio4\\ejercicio4\\Program.cs",
+              "RelativeToolTip": "ejercicio4\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T07:01:12.727Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
