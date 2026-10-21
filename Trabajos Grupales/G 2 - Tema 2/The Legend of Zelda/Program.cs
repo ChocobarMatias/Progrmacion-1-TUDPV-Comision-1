@@ -11,7 +11,7 @@ namespace TheLegendOfZelda
 
         public string Nombre
         {
-            get {return this.nombre;}
+            get { return this.nombre; }
             protected set
             {
                 if (string.IsNullOrWhiteSpace(value))
@@ -25,19 +25,19 @@ namespace TheLegendOfZelda
         public int Durabilidad
         {
 
-            get{return this.durabilidad;}
+            get { return this.durabilidad; }
 
         }
-        
+
         //Constructor, con un if dentro en durabilidad para evitar que se ingresen datos erroneos
         protected ItemZelda(string nombre, int durabilidad)
         {
             this.nombre = nombre;
 
-            if(durabilidad < 0)
+            if (durabilidad < 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(durabilidad), "la durabilidad es negativa");
-            
+
             }
             this.durabilidad = durabilidad;
         }
@@ -71,7 +71,7 @@ namespace TheLegendOfZelda
         }
     }
 
-    
+
     // Santillan Jorge Alfredo - 67125 ====================================================================
     // CLASE HIJA: EspadaMaestra
     // ====================================================================================================
@@ -114,14 +114,14 @@ namespace TheLegendOfZelda
 
             if (link.TieneSaludMaxima())
             {
-                Console.WriteLine(link.Nombre + " Utiliza la Espada Maestra y lanza rayos de energia sagrada que causan " + this.DanioSagrado + " puntos de daño" );
+                Console.WriteLine(link.Nombre + " Utiliza la Espada Maestra y lanza rayos de energia sagrada que causan " + this.DanioSagrado + " puntos de daño");
             }
             else
             {
                 Console.WriteLine(link.Nombre + " Ataca con la Esapda Maestr y no puede lanzar rayos porque no tiene salud maxima, causando " + this.DanioSagrado + " puntos de daño");
             }
         }
-        
+
     }
     // ====================================================================================================
     //  CLASE HIJA: ArcoFuerza
@@ -146,7 +146,7 @@ namespace TheLegendOfZelda
             }
         }
         // Base, ejecuta el constructor de ItemZelda
-        public ArcoFuerza (string nombre, int durabilidad, int flechasRestantes) : base(nombre, durabilidad)
+        public ArcoFuerza(string nombre, int durabilidad, int flechasRestantes) : base(nombre, durabilidad)
         {
             this.FlechasRestantes = flechasRestantes;
         }
@@ -174,13 +174,135 @@ namespace TheLegendOfZelda
         }
     }
 
-    //GRMAJAO MATIAS = MAIN()
+    /*Rodriguez Villa Sofia Luz - 67150
+    ==================================================
+    4. CLASE GESTORA: Link
+    ==================================================*/
+
+    public class Link
+    {
+        private string nombre;
+        private int corazones;
+
+        private ItemZelda[] inventario;
+
+        public string Nombre
+        {
+            get { return this.nombre; }
+            private set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("El nombre de Link no puede estar en blanco.");
+                }
+                this.nombre = value;
+            }
+        }
+
+        // Propiedad automática de solo lectura
+        public int MaxCorazones { get; }
+
+        public int Corazones
+        {
+            get { return this.corazones; }
+            private set
+            {
+                if (value < 0 || value > this.MaxCorazones)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "Los corazones deben estar entre 0 y el máximo.");
+                }
+                this.corazones = value;
+            }
+        }
+    }
+
+    //Propiedad calculada
+    public bool TieneSaludMaxima
+        {
+            get { return this.corazones == this.MaxCorazones; }
+        }
+
+        //Constructor
+        public Link(string nombre, int maxCorazones)
+        {
+            this.Nombre = nombre;
+
+            if (maxCorazones <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(maxCorazones), "Link debe tener al menos un corazón máximo.");
+            }
+
+            this.MaxCorazones = maxCorazones;
+            this.Corazones = maxCorazones;
+
+            this.inventario = new ItemZelda[2];
+        }
+
+        //Equipa un objeto en el espacio indicado
+        public void Equipar(ItemZelda item, int slot)
+        {
+            this.ValidarSlot(slot);
+
+            if (item == null)
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+
+            this.inventario[slot] = item;
+
+            Console.WriteLine($"{this.Nombre} equipó {item.Nombre} en el espacio {slot}.");
+        }
+
+        //Utiliza el objeto equipado
+        public void AccionarItem(int slot)
+        {
+            this.ValidarSlot(slot);
+
+            ItemZelda item = this.inventario[slot];
+
+            if (item == null)
+            {
+                Console.WriteLine($"El espacio {slot} del inventario está vacío");
+            }
+
+            return;
+
+        }
+
+        //Polimorfismo: se ejecuta la versión Usar() de la clase del objeto real.
+        item.Usar(this);
+    }
+
+    //Recibe daño sin permitir una cantidad negativa de corazones
+    public void RecibirDanio(int cantidad)
+    {
+        if (cantidad < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(cantidad), "El daño no puede ser negativo.");
+        }
+
+        this.Corazones = Math.Max(0, this.Corazones - cantidad);
+
+        Console.WriteLine($"{this.Nombre} recibió {cantidad} de daño." + $"Corazones: {this.Corazones}/{this.MaxCorazones}");
+    }
+
+    //Validación de los dos espacios del inventario
+    private void ValidarSlot(int slot)
+    {
+        if (slot < 0 || slot >= this.inventario.Length)
+        {
+            throw new ArgumentOutOfRangeException(nameof(slot), "El espacio debe ser 0 o 1.");
+        }
+    }
+}
+
+    //GRAMAJO MATIAS = MAIN()
 
     public class Program
     {
         public static void Main()
         {
-            //Creacion del personake
+            //Creacion del personaje
             Link link = new Link("Link", 10);
 
             //Creacion de armas
