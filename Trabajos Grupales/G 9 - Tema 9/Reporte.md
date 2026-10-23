@@ -4,6 +4,11 @@
 
 ## 1. Integrantes del Equipo
 * Ponce Matias Leonel - Legajo 67090 (Rol / Rama: dev-MatiasPonce-67090)
+**Juego Asignado:** [Nombre del Juego]  
+**Número de Grupo:** Grupo XX  
+
+## 1. Integrantes del Equipo
+* Apellido y Nombre 1 - Legajo XXXXX (Rol / Rama: dev-Nombre1Apellido1-Legajo)
 * Apellido y Nombre 2 - Legajo XXXXX (Rol / Rama: dev-Nombre2Apellido2-Legajo)
 * Apellido y Nombre 3 - Legajo XXXXX (Rol / Rama: dev-Nombre3Apellido3-Legajo)
 
