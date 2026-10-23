@@ -1,4 +1,0 @@
-C:\Users\MARCELO\Desktop\visual studio codigo\Super Mario Bros (Nintendo) grupo11\obj\Debug\net8.0\Super Mario Bros (Nintendo) grupo11.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\MARCELO\Desktop\visual studio codigo\Super Mario Bros (Nintendo) grupo11\obj\Debug\net8.0\Super Mario Bros (Nintendo) grupo11.AssemblyInfoInputs.cache
-C:\Users\MARCELO\Desktop\visual studio codigo\Super Mario Bros (Nintendo) grupo11\obj\Debug\net8.0\Super Mario Bros (Nintendo) grupo11.AssemblyInfo.cs
-C:\Users\MARCELO\Desktop\visual studio codigo\Super Mario Bros (Nintendo) grupo11\obj\Debug\net8.0\Super Mario Bros (Nintendo) grupo11.csproj.CoreCompileInputs.cache
