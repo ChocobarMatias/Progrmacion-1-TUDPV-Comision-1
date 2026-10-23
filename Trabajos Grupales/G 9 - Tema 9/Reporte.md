@@ -1,4 +1,9 @@
 # Reporte Técnico de Cátedra - Fase 1
+**Juego Asignado:** [Hollow Knight]  
+**Número de Grupo:** Grupo 9  
+
+## 1. Integrantes del Equipo
+* Ponce Matias Leonel - Legajo 67090 (Rol / Rama: dev-MatiasPonce-67090)
 **Juego Asignado:** [Nombre del Juego]  
 **Número de Grupo:** Grupo XX  
 
