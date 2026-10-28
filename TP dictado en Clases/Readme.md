@@ -1,1 +1,0 @@
-Colocar los TP realizados en clase en esta carpeta, Carpeta Grupo N ..... dentro de la carpeta debera contenero los jercicos de POO I y POO II  con el readme.md nombre de lso integrantes del grupo
