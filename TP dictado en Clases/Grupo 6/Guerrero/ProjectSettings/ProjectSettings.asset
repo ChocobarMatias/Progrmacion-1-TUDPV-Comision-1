@@ -605,8 +605,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Gurrero Logico
-  metroPackageVersion: 
+  metroPackageName: GurreroLogico
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -614,7 +614,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Gurrero Logico
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Gurrero Logico
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -681,7 +681,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 7df2c8e4-b9ac-4181-b18f-cdf99aa3b31a
   framebufferDepthMemorylessMode: 0

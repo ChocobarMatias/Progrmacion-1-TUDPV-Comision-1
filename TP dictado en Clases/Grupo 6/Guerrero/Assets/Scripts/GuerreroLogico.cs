@@ -7,7 +7,7 @@ public class GuerreroLogico
     private int vidaActual;
     private int escudo;
 
-    public string Nombre { get; }
+    public string Nombre { get { return nombre; } }
 
     public int VidaActual { get { return vidaActual; }
         private set
@@ -22,25 +22,25 @@ public class GuerreroLogico
         }
     }
 
-    public int Escudo { get; }
+    public int Escudo { get { return escudo; } }
     public bool EstaVivo { get { return vidaActual > 0; } }
 
     public GuerreroLogico(string nombre, int vidaMax, int escudoInicial)
     {
         this.nombre = nombre;
         this.vidaMax = vidaMax;
-        vidaActual = this.vidaMax;
+        this.vidaActual = this.vidaMax;
         this.escudo = escudoInicial;
     }
 
     public void RecibirDanio(int cantidad)
     {
-        if (EstaVivo) return;
+        if (!EstaVivo) return;
 
         if (escudo >= cantidad)
             escudo -= cantidad;
 
-        if(escudo < cantidad)
+        else if(escudo < cantidad)
         {
             int restante = cantidad - escudo;
             escudo = 0;
