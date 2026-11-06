@@ -18,7 +18,7 @@
         {
             "ColumnId": "HierarchyViewColumn Name",
             "Visible": true,
-            "Width": 200.0,
+            "Width": 394.0,
             "Index": 2
         },
         {
@@ -40,15 +40,15 @@
             "Index": 5
         },
         {
-            "ColumnId": "GameObject/Layer",
-            "Visible": false,
-            "Width": 150.0,
-            "Index": 6
-        },
-        {
             "ColumnId": "GameObject/Static",
             "Visible": false,
             "Width": 75.0,
+            "Index": 6
+        },
+        {
+            "ColumnId": "GameObject/Layer",
+            "Visible": false,
+            "Width": 150.0,
             "Index": 7
         }
     ],
