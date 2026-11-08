@@ -6,13 +6,16 @@
 ## 1. Integrantes del Equipo
 * Matias Leonel Ponce - Legajo 67090 (Rama: dev-MatiasPonce-67090)
 
-## Reporte Técnico de Cátedra - Fase 2
-**Juego Asignado:** Pokémon  
-**Número de Grupo:** Grupo 10  
+
 
 ## 2. Diagnóstico/Reporte
 ** Añadi una pantalla de pelea (BattleSystem), falta conectar esta pantalla para que se active al reconocer que se encontro un pokemon
 ====================================================================================
+
+## Reporte Técnico de Cátedra - Fase 2
+**Juego Asignado:** Pokémon  
+**Número de Grupo:** Grupo 10  
+
 ## 1. Integrantes del Equipo
 * Bejar Antonio Sebastian - Legajo 67117 (Programador y Diseñador / Rama: dev-BejarSebastian)
 
