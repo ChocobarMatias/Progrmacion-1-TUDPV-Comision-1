@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
+using UnityEngine;
+
+using Pac_Man_Main;
 namespace Pac_Man_Main
 {
-    internal class PacMan
+    public class PacMan 
     {
         protected string nombre;
         protected int vidas;
@@ -61,16 +63,16 @@ namespace Pac_Man_Main
         public void ComerPunto(int puntosExtra)
         {
             this.puntuacion = puntuacion + puntosExtra;
-            Console.WriteLine($"{this.nombre} comio un punto.");
-            Console.WriteLine($"Puntuacion actual: {this.puntuacion}");
+           Debug.Log($"{this.nombre} comio un punto.");
+            Debug.Log($"Puntuacion actual: {this.puntuacion}");
         }
 
         //Metodo publico para que pacman pierda vida en cada encuentro con los fantasmas
         public void PerderVida()
         {
             this.vidas--;
-            Console.WriteLine($"{this.nombre} perdio una vida");
-            Console.WriteLine($"Vidas restantes: {this.vidas}");
+            Debug.Log($"{this.nombre} perdio una vida");
+            Debug.Log($"Vidas restantes: {this.vidas}");
         }
 
         // Metodo publico para cuando pacman coma la pildora de poder
@@ -78,8 +80,8 @@ namespace Pac_Man_Main
         public void ComerPildoraPoder(List<Fantasma> fantasmas)
         {
             this.puntuacion += 50;
-            Console.WriteLine($"{this.nombre} comio la PILDORA DE PODER");
-            Console.WriteLine($"Puntuacion actual: {this.puntuacion}");
+            Debug.Log($"{this.nombre} comio la PILDORA DE PODER");
+            Debug.Log($"Puntuacion actual: {this.puntuacion}");
             foreach (Fantasma f in fantasmas)
             {
                 f.EstadoVulnerable = true;
