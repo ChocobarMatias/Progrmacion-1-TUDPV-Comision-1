@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\unity\\Minecraft 2D\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\mineriajugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\mineriajugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\dropbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\dropbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\jugadorsaludpuente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\jugadorsaludpuente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\movimientojugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\movimientojugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\saltojugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\saltojugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\inventariojugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\inventariojugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\minecraft 2d\\assets\\scripts\\puentes\\bloquejuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puentes\\bloquejuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Modelo\\Herramienta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Modelo\\Herramienta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UIController.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\UIController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\UIController.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\UIController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\UIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:13:42.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SaltoJugador.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\SaltoJugador.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\SaltoJugador.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\SaltoJugador.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\SaltoJugador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:13:40.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovimientoJugador.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\MovimientoJugador.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\MovimientoJugador.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\MovimientoJugador.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\MovimientoJugador.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:13:37.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MineriaJugador.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\MineriaJugador.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\MineriaJugador.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\MineriaJugador.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\MineriaJugador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:11:30.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JugadorSaludPuente.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\JugadorSaludPuente.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\JugadorSaludPuente.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\JugadorSaludPuente.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\JugadorSaludPuente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:11:28.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InventarioJugador.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\InventarioJugador.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\InventarioJugador.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\InventarioJugador.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\InventarioJugador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:11:21.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DropBloque.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\DropBloque.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\DropBloque.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\DropBloque.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\DropBloque.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:11:20.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CameraShake.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\CameraShake.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\CameraShake.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\CameraShake.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\CameraShake.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:11:17.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BloqueJuego.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\BloqueJuego.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puentes\\BloqueJuego.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Puentes\\BloqueJuego.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puentes\\BloqueJuego.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T23:09:52.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Herramienta.cs",
+              "DocumentMoniker": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Modelo\\Herramienta.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Modelo\\Herramienta.cs",
+              "ToolTip": "E:\\unity\\Minecraft 2D\\Assets\\Scripts\\Modelo\\Herramienta.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Modelo\\Herramienta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T01:18:34.093Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
