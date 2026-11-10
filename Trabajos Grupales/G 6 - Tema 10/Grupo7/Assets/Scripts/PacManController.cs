@@ -1,7 +1,7 @@
 using UnityEngine;
 using Pac_Man_Main;
 using UnityEngine.SceneManagement;
-
+using System.Collections;
 public class PacManController : MonoBehaviour
 {
     private Pac_Man_Main.PacMan modeloLogico;
@@ -11,6 +11,9 @@ public class PacManController : MonoBehaviour
     [SerializeField] private int vida = 3;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private float rayDistance = 0.5f;
+    // Variable para el SpriteRenderer del Pac-Man
+    private SpriteRenderer sr;
+    private bool esInvulnerable = false;
 
     //Al tocar WASD el player cambia a esa direccion
     private Vector2 currentDirection = Vector2.zero;
@@ -19,7 +22,8 @@ public class PacManController : MonoBehaviour
 
     void Start()
     {
-        //Con esto agarramos el componente "Rigidbody2D"
+        //Con esto agarramos el componente "Rigidbody2D" y el componente "SpriteRenderer" del objeto al que este script esta atado
+        sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         modeloLogico = new Pac_Man_Main.PacMan("Pac-Man");
     }
@@ -81,10 +85,49 @@ public class PacManController : MonoBehaviour
         rb.linearVelocity = currentDirection * velocidad * Time.deltaTime;
     }
 
-    void ReiniciarEscena()
+    //public void ReiniciarEscena()
     {
         // Recarga la escena actual desde cero
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void RecibirGolpe()
+    {
+        if (esInvulnerable) return;
+
+        modeloLogico.PerderVida();
+
+        GameManagerPacman.Instancia.ActualizarInterfazVisual();
+
+        if (modeloLogico.Vidas <= 0)
+        {
+            Debug.Log("¡Game Over!");
+            currentDirection = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
+            this.enabled = false;
+
+            GameManagerPacman.Instancia.ActivarDerrota();
+            return;
+        }
+
+        StartCoroutine(RutinaInvulnerabilidad(1.5f));
+    }
+
+    private IEnumerator RutinaInvulnerabilidad(float duracionTotal)
+    {
+        esInvulnerable = true;
+        float tiempoLimite = Time.time + duracionTotal;
+
+        while (Time.time < tiempoLimite)
+        {
+            sr.color = new Color(1f, 1f, 1f, 0.2f);
+            yield return new WaitForSeconds(0.1f);
+            sr.color = Color.white;
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        sr.color = Color.white;
+        esInvulnerable = false;
     }
 
     private void OnTriggerEnter2D(Collider2D otro)
@@ -94,33 +137,22 @@ public class PacManController : MonoBehaviour
         {
             // Llamamos al método de tu clase lógica de C# (le sumamos 10 puntos por ejemplo)
             modeloLogico.ComerPunto(10);
-            Debug.Log("Pac-Man comió un punto. Puntuación actual: " + modeloLogico.Puntuacion);
-            // Destruimos el objeto visual en Unity
-            Destroy(otro.gameObject);
+            GameManagerPacman.Instancia.RegistrarPuntoComido(otro.gameObject);
         }
 
         // Si choca contra un fantasma
         else if (otro.CompareTag("Fantasma"))
         {
-            // Llamamos a la lógica de perder vida
-            modeloLogico.PerderVida();
-            Debug.Log("Has perdido una vida");
+            FantasmaController fantasma = otro.GetComponent<FantasmaController>();
 
-            if (modeloLogico.Vidas <= 0)
+            if (fantasma != null && fantasma.EsVulnerable)
             {
-                Debug.Log("¡Game Over!");
-                // 1. Detenemos por completo el movimiento de Pac-Man
-                currentDirection = Vector2.zero;
-                if (rb != null)
-                {
-                    rb.linearVelocity = Vector2.zero;
-                }
-
-                // 2. Desactivamos este script para que no pueda seguir moviéndose
-                this.enabled = false;
-
-                Invoke("ReiniciarEscena", 2f);
+                modeloLogico.Puntuacion += 200;
+                GameManagerPacman.Instancia.ActualizarInterfazVisual();
+                fantasma.Reaparecer();
             }
+            else
+                RecibirGolpe();
         }
     }
 }
