@@ -1,5 +1,18 @@
 <<<<<<< HEAD
-# Reporte Técnico de Cátedra - Fase 2
+## Reporte Técnico de Cátedra - Fase 3
+**Juego Asignado:** Pokémon  
+**Número de Grupo:** Grupo 9
+
+## 1. Integrantes del Equipo
+* Matias Leonel Ponce - Legajo 67090 (Rama: dev-MatiasPonce-67090)
+
+
+
+## 2. Diagnóstico/Reporte
+** Añadi una pantalla de pelea (BattleSystem), falta conectar esta pantalla para que se active al reconocer que se encontro un pokemon
+====================================================================================
+
+## Reporte Técnico de Cátedra - Fase 2
 **Juego Asignado:** Pokémon  
 **Número de Grupo:** Grupo 10  
 
@@ -25,7 +38,7 @@
   3. Utilizar las teclas **WASD** o las **Flechas de Dirección** para mover al personaje mediante físicas controladas (`Rigidbody2D.velocity` en `FixedUpdate`).
   4. Desplazarse hacia la zona de pasto alto configurada con un `BoxCollider2D` en modo *Trigger*.
   5. Verificar en la **Consola** los mensajes de entrada/salida de la zona y el registro generado por la lógica pura de C# al evaluar la probabilidad matemática de aparición de un Pokémon salvaje.
-=======
+====================================================================================
 # Reporte Técnico de Cátedra - Fase 1
 **Juego Asignado:** [Nombre del Juego]  
 **Número de Grupo:** Grupo XX  
