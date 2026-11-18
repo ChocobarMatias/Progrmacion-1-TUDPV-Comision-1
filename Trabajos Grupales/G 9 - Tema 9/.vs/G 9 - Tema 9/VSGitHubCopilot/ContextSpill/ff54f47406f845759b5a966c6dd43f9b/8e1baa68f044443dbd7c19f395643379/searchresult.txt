@@ -1,0 +1,292 @@
+﻿28 matches found: 
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos Grupales\G 2 - Tema 7\CaballeroNegro.cs>
+    File: `Trabajos Grupales/G 2 - Tema 7/CaballeroNegro.cs`
+```c#
+namespace DarkSouls.Modelo
+{
+    /// <summary>Tanque: esquive pesado y costoso.</summary>
+    public class CaballeroNegro : GuerreroHueco
+    {
+        public override int CostoEsquivar => 40;
+
+        public CaballeroNegro(string nombre, int saludMax, int staminaMax)
+            : base(nombre, saludMax, staminaMax) { }
+    }
+}
+
+```
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos Grupales\G 4 - Tema 9\Del 1 hasta el 2 - Matias Ponce\ConsoleApp2\ConsoleApp2\Program.cs>
+    File: `...ajos Grupales/G 4 - Tema 9/Del 1 hasta el 2 - Matias Ponce/ConsoleApp2/ConsoleApp2/Program.cs`
+```c#
+/*...*/class CriaturaHollownest
+{
+    protected int Salud;
+    protected string Nombre;
+
+    virtual ReaccionarGolpe()
+    {
+        Console.WriteLine("Ouch");
+    }
+}
+class ElCaballero : CriaturaHollownest
+{
+    private int reservaAlma = 99;
+    ElCaballero.Salud = 100;
+
+    ConcentrarAlma()
+    {
+        if (reservaAlma > 0)
+        {
+            reservaAlma -= 15;
+            ElCaballero.Salud += 15;
+            Console.WriteLine("Te curaste 15 de vida");
+        }
+        else
+        {
+            Console.WriteLine("No hay alma para concentrar.");
+        }
+    }
+}
+
+```
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos Grupales\G 4 - Tema 9\Del 1 hasta el 2 - Matias Ponce\ConsoleApp2\ConsoleApp2\Program.cs>
+    File: `...ajos Grupales/G 4 - Tema 9/Del 1 hasta el 2 - Matias Ponce/ConsoleApp2/ConsoleApp2/Program.cs`
+```c#
+/*...*/class CriaturaHollownest
+{
+    protected int Salud;
+    protected string Nombre;
+
+    virtual ReaccionarGolpe()
+    {
+        Console.WriteLine("Ouch");
+    }
+}
+class ElCaballero : CriaturaHollownest
+{
+    private int reservaAlma = 99;
+    ElCaballero.Salud = 100;
+
+    ConcentrarAlma()
+    {
+        if (reservaAlma > 0)
+        {
+            reservaAlma -= 15;
+            ElCaballero.Salud += 15;
+            Console.WriteLine("Te curaste 15 de vida");
+        }
+        else
+        {
+            Console.WriteLine("No hay alma para concentrar.");
+        }
+    }
+}
+
+```
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\Valdez del Pino Tomas-67145\Ejercisios\EJ4.cs>
+    // Lines 12 to 28
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\dev-MatiasBezdjianBumbacher-67068\TP 2 Integrador\TP 2 Integrador\Program.cs>
+    // Lines 229 to 242
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\dev-MatiasBezdjianBumbacher-67068\TP 2 Integrador\TP 2 Integrador\Program.cs>
+    // Lines 259 to 265
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67125 - Santillan - Jorge\punto8\punto8\Program.cs>
+    // Lines 25 to 36
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67125 - Santillan - Jorge\punto8\punto8\Program.cs>
+    File: `Trabajos de Alumnos/67125 - Santillan - Jorge/punto8/punto8/Program.cs`
+```c#
+/*...*/int[] danoJefe = new int[3];
+int danoAcumulado = 0;
+int promedioDano = 0;
+int valorMax = 0;
+int faseMax = 0;
+
+for (int i = 0; i < danoJefe.Length; i++)
+{
+    Console.WriteLine("Daño de la fase " + (i + 1) + ": ");
+    danoJefe[i] = int.Parse(Console.ReadLine());
+    danoAcumulado += danoJefe[i];
+}
+
+Console.WriteLine("1: Calcular promedio de daño entre las 3 fases");
+Console.WriteLine("2: Identificar la fase más destructiva");
+int opcion = int.Parse(Console.ReadLine());
+
+switch (opcion)
+{
+    case 1:
+        promedioDano = danoAcumulado / danoJefe.Length;
+        Console.WriteLine("El promedio de daño entre las 3 fases es: " + promedioDano);
+        break;
+
+    case 2:
+        /*...*/
+```
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67117-Bejar-Sebastian\Ejercicio8\Ejercicio8\Program.cs>
+    File: `Trabajos de Alumnos/67117-Bejar-Sebastian/Ejercicio8/Ejercicio8/Program.cs`
+```c#
+/*...*//*Consigna: Cargar con un for el daño recibido en las 3 fases de un Jefe en un array de enteros.
+Mediante un switch permitir:
+1: Calcular promedio de daño entre las 3 fases,
+2: Identificar la fase más destructiva mediante comparaciones if.*/
+
+using System;
+public class Ejercicio8
+{
+    /*...*/}
+```
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67097-Gramajo-Matias\Punto8.cs>
+    File: `Trabajos de Alumnos/67097-Gramajo-Matias/Punto8.cs`
+```c#
+int[] dañoJefe = new int[3];
+int acumuladorDaño = 0;
+int prom;
+int valorMax = 0;
+int faseMax = 0;
+
+for (int i = 0; i < dañoJefe.Length; i++)
+{
+    Console.WriteLine("Daño de la fase " + (i + 1) + ":");
+    dañoJefe[i] = int.Parse(Console.ReadLine());
+    acumuladorDaño += dañoJefe[i];
+}
+
+Console.WriteLine("1: Calcular promedio de daño entre las 3 fases");
+Console.WriteLine("2: Identificar la fase más destructiva");
+int choice = int.Parse(Console.ReadLine());
+
+switch (choice)
+{
+    case 1:
+        prom = acumuladorDaño / dañoJefe.Length;
+        Console.WriteLine("El promedio es " + prom);
+        break;
+
+    case 2:
+        for (int i = 0; i < dañoJefe.Length; i++)
+        {
+            /*...*/
+```
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67097-Gramajo-Matias\Punto8.cs>
+    // Lines 27 to 36
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67050-Rahman Rintoul Ramiro\Desarollo.cs>
+    // Lines 186 to 262
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67050-Rahman Rintoul Ramiro\Desarollo.cs>
+    // Lines 186 to 262
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67097-Gramajo-Matias\Punto4.cs>
+    File: `Trabajos de Alumnos/67097-Gramajo-Matias/Punto4.cs`
+```c#
+int [] gemas = { 10, 25, 50, 80, 120 };
+
+Console.WriteLine("Ingrese las gemas disponibles");
+int gemasUsuario = int.Parse(Console.ReadLine());
+
+
+Console.WriteLine("1.Mostrar cartas de tienda");
+Console.WriteLine("2.Mostrar carta mas cara");
+int choice = int.Parse(Console.ReadLine());
+
+switch (choice)
+{
+    case 1:
+    for(int i = 0; i < gemas.Length; i++)
+    {
+        if(gemas[i] > gemasUsuario)
+        {
+            Console.Write("Carta " + (i+1) + ", Valor: ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(gemas[i] + " GEMAS INSUFICIENTES");
+            Console.ResetColor();       
+        }
+        else
+        {
+            Console.Write("Carta " + (i+1) + ", Valor: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(gemas[i]);
+            Console.ResetColor();  
+        }
+    
+    }
+        break;
+
+    case 2:
+    /*...*/
+```
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67146-Andujar-Tomas\Punto9\Punto9\obj\Release\net8.0\Punto9.AssemblyInfo.cs>
+    File: `Trabajos de Alumnos/67146-Andujar-Tomas/Punto9/Punto9/obj/Release/net8.0/Punto9.AssemblyInfo.cs`
+```c#
+//------------------------------------------------------------------------------
+// <auto-generated>
+//     Este código fue generado por una herramienta.
+//     Versión de runtime:4.0.30319.42000
+//
+//     Los cambios en este archivo podrían causar un comportamiento incorrecto y se perderán si
+//     se vuelve a generar el código.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+using System;
+using System.Reflection;
+
+[assembly: System.Reflection.AssemblyCompanyAttribute("Punto9")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab03273cb802a5db4305296929cd6fae6208831a")]
+[assembly: System.Reflection.AssemblyProductAttribute("Punto9")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Punto9")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+/*...*/
+```
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67117-Bejar-Sebastian\Ejercicio1\Ejercicio1\Program.cs>
+    // Lines 5 to 31
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\TP dictado en Clases\AnaSofíaGonzález-67128-Comision 1\poo ejercicio 2\Program.cs>
+    // Lines 47 to 63
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67124-BritosJoaquin\Ejercicio 1\Ejercicio 1\Program.cs>
+    // Lines 8 to 27
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67045 - Gonzalez Pablo\Ejercicio2_POO\Program.cs>
+    // Lines 56 to 71
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos Grupales\G 11 - Tema 5\DOOM_Grupo08 - Tema 5\Assets\Scripts\Modelos\Personajes.cs>
+    // Lines 86 to 114
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67128-Sofia-Gonzalez\Ejercicio 9\Ejercicio 9\Program.cs>
+    // Lines 6 to 26
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67036-GenaroVarela\Program.cs>
+    // Lines 6 to 290
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67036-GenaroVarela\Program.cs>
+    // Lines 8 to 22
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos de Alumnos\67050-Rahman Rintoul Ramiro\Trabajo Practico GuerreroLava\AranaMazmorra.cs>
+    // Lines 27 to 50
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos Grupales\G 9 - Tema 3\Reporte.md>
+    // Lines 49 to 52
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos Grupales\G 7 - Tema 6\TP_Grupo6\Program.cs>
+    // Lines 9 to 30
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos Grupales\G 1 -Tema 5\Program.cs>
+    // Lines 2 to 30
+</match>
+<match path=F:\games\PROJECT\Progrmacion-1-TUDPV-Comision-1\Trabajos Grupales\G 11 - Tema 5\Program.cs>
+    // Lines 2 to 30
+</match>

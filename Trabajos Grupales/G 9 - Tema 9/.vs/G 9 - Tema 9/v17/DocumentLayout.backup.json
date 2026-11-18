@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C7AFF28-6921-42E1-8E60-9D46A9B9E35D}|ConsoleApp1\\ConsoleApp1.csproj|f:\\games\\project\\progrmacion-1-tudpv-comision-1\\trabajos grupales\\g 9 - tema 9\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C7AFF28-6921-42E1-8E60-9D46A9B9E35D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C7AFF28-6921-42E1-8E60-9D46A9B9E35D}|ConsoleApp1\\ConsoleApp1.csproj|f:\\games\\project\\progrmacion-1-tudpv-comision-1\\trabajos grupales\\g 9 - tema 9\\consoleapp1\\criaturaclasebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C7AFF28-6921-42E1-8E60-9D46A9B9E35D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\criaturaclasebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C7AFF28-6921-42E1-8E60-9D46A9B9E35D}|ConsoleApp1\\ConsoleApp1.csproj|f:\\games\\project\\progrmacion-1-tudpv-comision-1\\trabajos grupales\\g 9 - tema 9\\consoleapp1\\enemigoclasehija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C7AFF28-6921-42E1-8E60-9D46A9B9E35D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\enemigoclasehija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C7AFF28-6921-42E1-8E60-9D46A9B9E35D}|ConsoleApp1\\ConsoleApp1.csproj|f:\\games\\project\\progrmacion-1-tudpv-comision-1\\trabajos grupales\\g 9 - tema 9\\consoleapp1\\protagonistaclasehija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C7AFF28-6921-42E1-8E60-9D46A9B9E35D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\protagonistaclasehija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProtagonistaClaseHija.cs",
+              "DocumentMoniker": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\ConsoleApp1\\ProtagonistaClaseHija.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\ProtagonistaClaseHija.cs",
+              "ToolTip": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\ConsoleApp1\\ProtagonistaClaseHija.cs",
+              "RelativeToolTip": "ConsoleApp1\\ProtagonistaClaseHija.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T17:58:43.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemigoClaseHija.cs",
+              "DocumentMoniker": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\ConsoleApp1\\EnemigoClaseHija.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\EnemigoClaseHija.cs",
+              "ToolTip": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\ConsoleApp1\\EnemigoClaseHija.cs",
+              "RelativeToolTip": "ConsoleApp1\\EnemigoClaseHija.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T17:58:42.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CriaturaClaseBase.cs",
+              "DocumentMoniker": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\ConsoleApp1\\CriaturaClaseBase.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\CriaturaClaseBase.cs",
+              "ToolTip": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\ConsoleApp1\\CriaturaClaseBase.cs",
+              "RelativeToolTip": "ConsoleApp1\\CriaturaClaseBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T17:58:40.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "F:\\games\\PROJECT\\Progrmacion-1-TUDPV-Comision-1\\Trabajos Grupales\\G 9 - Tema 9\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T17:57:11.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
