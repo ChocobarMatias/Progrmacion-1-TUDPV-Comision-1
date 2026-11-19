@@ -1,0 +1,7 @@
+C:\Users\usuario\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\TP dictado en Clases\LucaFerullo-67221-Comision1\Ejercicio 1 POO\TP_POO\TP_POO\bin\Debug\TP_POO.exe.config
+C:\Users\usuario\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\TP dictado en Clases\LucaFerullo-67221-Comision1\Ejercicio 1 POO\TP_POO\TP_POO\bin\Debug\TP_POO.exe
+C:\Users\usuario\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\TP dictado en Clases\LucaFerullo-67221-Comision1\Ejercicio 1 POO\TP_POO\TP_POO\bin\Debug\TP_POO.pdb
+C:\Users\usuario\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\TP dictado en Clases\LucaFerullo-67221-Comision1\Ejercicio 1 POO\TP_POO\TP_POO\obj\Debug\TP_POO.csproj.AssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\TP dictado en Clases\LucaFerullo-67221-Comision1\Ejercicio 1 POO\TP_POO\TP_POO\obj\Debug\TP_POO.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\TP dictado en Clases\LucaFerullo-67221-Comision1\Ejercicio 1 POO\TP_POO\TP_POO\obj\Debug\TP_POO.exe
+C:\Users\usuario\Documents\GitHub\Progrmacion-1-TUDPV-Comision-1\TP dictado en Clases\LucaFerullo-67221-Comision1\Ejercicio 1 POO\TP_POO\TP_POO\obj\Debug\TP_POO.pdb
