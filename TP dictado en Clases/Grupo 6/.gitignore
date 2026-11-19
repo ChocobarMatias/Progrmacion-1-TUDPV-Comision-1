@@ -12,3 +12,28 @@
 ## Carpetas de paquetes y herramientas comunes
 **/packages/
 **/.paket/
+
+# =========================================================================
+# Configuración de la subcarpeta 'Guerrero'
+# =========================================================================
+Guerrero/[Ll]ibrary/
+Guerrero/[Tt]emp/
+Guerrero/[Oo]bj/
+Guerrero/[Bb]uild/
+Guerrero/[Bb]uilds/
+Guerrero/[Ll]ogs/
+Guerrero/[Vv]REmulator/
+Guerrero/[Mm]emoryCaptures/
+Guerrero/UserSettings/
+
+# Archivos de soluciones de Visual Studio generados automáticamente
+Guerrero/*.csproj
+Guerrero/*.sln
+Guerrero/*.suo
+Guerrero/*.user
+Guerrero/*.userprefs
+Guerrero/*.pidb
+Guerrero/*.svd
+Guerrero/*.pdb
+Guerrero/*.opendb
+Guerrero/*.VC.db

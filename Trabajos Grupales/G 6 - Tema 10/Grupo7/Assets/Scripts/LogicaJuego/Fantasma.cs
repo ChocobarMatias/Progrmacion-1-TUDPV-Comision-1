@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
+using UnityEngine;
+
+using Pac_Man_Main;
 namespace Pac_Man_Main
 {
-   public class Fantasma
-       {
+   public class Fantasma 
+    {
             //Definicion de atributos protegidos
             protected string nombre;
             protected string color;
@@ -58,11 +60,11 @@ namespace Pac_Man_Main
 
                 if (this.estadoVulnerable == true)
                 {
-                    Console.WriteLine($"{this.nombre} fue devorado por Pac-Man");
+                   Debug.Log($"{this.nombre} fue devorado por Pac-Man");
                 }
                 else
                 {
-                    Console.WriteLine($"El fantasma {this.nombre} atrapo a Pac-Man");
+                    Debug.Log($"El fantasma {this.nombre} atrapo a Pac-Man");
                 }
 
             }

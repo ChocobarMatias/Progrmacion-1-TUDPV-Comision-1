@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Pac_Man_Main;
-
+using System.Collections;
 public class FantasmaController : MonoBehaviour
 {
     [Header("Configuración de IA")]
@@ -9,6 +9,33 @@ public class FantasmaController : MonoBehaviour
     public float speed = 4f;
     public LayerMask wallLayer;
     public float rayDistance = 0.6f;
+
+    private Vector3 posInicial;
+
+    public bool EsVulnerable => modeloFantasma != null && modeloFantasma.EstadoVulnerable;
+
+    private SpriteRenderer sr;
+    private Color colorOriginal;
+    private float speedOriginal;
+
+    public void ActivarVulnerable(float duracion)
+    {
+        StopAllCoroutines();
+        StartCoroutine(RutinaVulnerable(duracion));
+    }
+
+    private IEnumerator RutinaVulnerable(float duracion)
+    {
+        modeloFantasma.EstadoVulnerable = true;
+        sr.color = Color.blue;
+        speed = speedOriginal * 0.5f;
+
+        yield return new WaitForSeconds(duracion);
+
+        modeloFantasma.EstadoVulnerable = false;
+        sr.color = colorOriginal;
+        speed = speedOriginal;
+    }
 
     private Vector2 currentDir = Vector2.right;
     private Vector2[] possibleDirections = { Vector2.up, Vector2.down, Vector2.left, Vector2.right };
@@ -20,6 +47,12 @@ public class FantasmaController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        posInicial = transform.position;
+
+        sr = GetComponent<SpriteRenderer>();
+        colorOriginal = sr.color;
+        speedOriginal = speed;
 
         // Inicializamos la clase lógica correspondiente según el tipo de fantasma
         if (tipoFantasma == "Blinky")
@@ -82,5 +115,10 @@ public class FantasmaController : MonoBehaviour
             modeloFantasma.SerDevorado();
             Debug.Log("¡Un fantasma interactuó con Pac-Man!");
         }
+    }
+
+    public void Reaparecer()
+    {
+        transform.position = posInicial;
     }
 }
