@@ -1,6 +1,8 @@
 using UnityEngine;
 using System;
 
+// Clase pura de C# (Semana 1). NO hereda de MonoBehaviour.
+// Fase 3: se agrega el evento SaludCambiada para que la UI se sincronice en tiempo real.
 public class Link
 {
     private const int CapacidadInventario = 6;
@@ -8,6 +10,9 @@ public class Link
     private string nombre;
     private int corazones;
     private ItemZelda[] inventario;
+
+    // Se dispara cada vez que cambian los corazones: (actual, maximo)
+    public event Action<int, int> SaludCambiada;
 
     public string Nombre
     {
@@ -30,6 +35,7 @@ public class Link
             if (value < 0 || value > this.MaxCorazones)
                 throw new ArgumentOutOfRangeException(nameof(value), "Los corazones deben estar entre 0 y el máximo.");
             this.corazones = value;
+            SaludCambiada?.Invoke(this.corazones, this.MaxCorazones);
         }
     }
 
@@ -51,8 +57,6 @@ public class Link
         this.ValidarSlot(slot);
         if (item == null) throw new ArgumentNullException(nameof(item));
         this.inventario[slot] = item;
-        
-        // CORRECCIÓN: Debug.Log para que se vea reflejado en el editor de Unity
         Debug.Log($"{this.Nombre} equipó {item.Nombre} en el espacio {slot}.");
     }
 

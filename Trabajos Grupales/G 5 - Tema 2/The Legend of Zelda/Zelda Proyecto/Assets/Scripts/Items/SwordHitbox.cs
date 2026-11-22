@@ -4,16 +4,21 @@ public class SwordHitbox : MonoBehaviour
 {
     [SerializeField] private PlayerController player;
 
+    private void Awake()
+    {
+        // Refactor: si no se asignó a mano en el Inspector, lo busca en el padre (antes tiraba NullReference)
+        if (player == null) player = GetComponentInParent<PlayerController>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // REQUISITO: Al entrar en contacto con enemigos, invocar la función de resta de vida
-        if (collision.CompareTag("Enemigo"))
+        if (player == null) return;
+
+        // Se busca el componente en vez de depender solo del Tag "Enemigo"
+        Enemigo enemigo = collision.GetComponentInParent<Enemigo>();
+        if (enemigo != null)
         {
-            if (collision.TryGetComponent<Enemigo>(out var enemigo))
-            {
-                // Invoca el método RecibirDanio expuesto en tu clase Enemigo
-                enemigo.RecibirDanio(player.DanioEspada);
-            }
+            enemigo.RecibirDanio(player.DanioEspada);
         }
     }
 }

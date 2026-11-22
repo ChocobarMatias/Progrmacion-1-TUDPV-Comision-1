@@ -3,6 +3,8 @@ using UnityEngine;
 public class Cofre : MonoBehaviour
 {
     [SerializeField] private string itemName = "Llave pequeña";
+    [SerializeField] private AudioClip sonidoAbrir;
+
     private PlayerController playerInRange;
     private Animator animator;
     private bool opened;
@@ -31,7 +33,10 @@ public class Cofre : MonoBehaviour
         {
             opened = true;
             Debug.Log($"Cofre abierto: {itemName}");
-            animator.SetTrigger("Abrir");
+            GameManager.Sonar(sonidoAbrir);
+
+            // Refactor: antes avisaba que faltaba el Animator pero igual llamaba SetTrigger -> NullReferenceException
+            if (animator != null) animator.SetTrigger("Abrir");
         }
     }
 }

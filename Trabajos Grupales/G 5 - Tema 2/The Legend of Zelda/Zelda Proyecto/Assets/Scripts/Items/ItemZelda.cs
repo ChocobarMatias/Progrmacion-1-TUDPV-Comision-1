@@ -1,5 +1,8 @@
 using UnityEngine;
+using System;
 
+// Clase pura abstracta (Semana 1).
+// Refactor Fase 3: se agregan validaciones en el constructor, igual que en Link.
 public abstract class ItemZelda
 {
     public string Nombre { get; protected set; }
@@ -7,6 +10,11 @@ public abstract class ItemZelda
 
     public ItemZelda(string nombre, int durabilidad)
     {
+        if (string.IsNullOrWhiteSpace(nombre))
+            throw new ArgumentException("El ítem necesita un nombre.", nameof(nombre));
+        if (durabilidad <= 0)
+            throw new ArgumentOutOfRangeException(nameof(durabilidad), "La durabilidad debe ser mayor que cero.");
+
         this.Nombre = nombre;
         this.Durabilidad = durabilidad;
     }
